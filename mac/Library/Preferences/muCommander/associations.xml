@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<associations>
+    <association command="QuickLook">
+        <filename value="(?i).*\.jpg|.*\.gif|.*\.png|.*\.bmp|.*\.pdf|.*\.md|.*\.xmind" />
+    </association>
+</associations>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookmarks version="0.9.2">
+    <bookmark>
+        <name>family</name>
+        <location>/Volumes/Public/</location>
+    </bookmark>
+    <bookmark>
+        <name>work</name>
+        <location>/Users/takas-ho/work/</location>
+    </bookmark>
+    <bookmark>
+        <name>Downloads</name>
+        <location>/Users/takas-ho/Downloads/</location>
+    </bookmark>
+    <bookmark>
+        <name>0:tmp</name>
+        <location>/Users/takas-ho/tmp/</location>
+    </bookmark>
+    <bookmark>
+        <name>Home</name>
+        <location>/Users/takas-ho/</location>
+    </bookmark>
+    <bookmark>
+        <name>Archive</name>
+        <location>/Users/takas-ho/Data/Archive/mac/</location>
+    </bookmark>
+    <bookmark>
+        <name>iPod.touch</name>
+        <location>/Users/takas-ho/Data/iPod.touch/</location>
+    </bookmark>
+    <bookmark>
+        <name>Q:family</name>
+        <location>smb://192.168.0.1/Public/</location>
+    </bookmark>
+</bookmarks>

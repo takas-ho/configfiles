@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <commands>
-    <command alias="MacVim"  value="open -a MacVim $f"/>
+    <command alias="open" value="open $f" type="system"/>
+    <command alias="openFM" value="open -a Finder $f" type="system" display="Finder"/>
+    <command alias="openURL" value="open $f" type="system"/>
+    <command alias="view" value="qlmanage -p $f" type="system"/>
+    <command alias="QuickLook" value="qlmanage -p $f"/>
+    <command alias="vlc" value="open -a vlc $f" display="Movie:vlc"/>
+    <command alias="mplayerx" value="open -a mplayerx $f" display="Movie:mplayerx"/>
+    <command alias="meld" value="open -W -a Meld --args $f"/>
 </commands>
-

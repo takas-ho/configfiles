@@ -6,6 +6,7 @@
     <action id="SwitchActiveTable" keystroke="LEFT" alt_keystroke="RIGHT"/>
     <action id="CopyFilesToClipboard" keystroke="meta C"/>
     <action id="ConnectToServer"/>
+    <action id="Mkfile" keystroke="shift F7" alt_keystroke="ctrl N"/>
     <action id="Rename" keystroke="F2"/>
     <action id="OpenInBothPanels"/>
     <action id="Delete" keystroke="F8" alt_keystroke="meta BACK_SPACE"/>
@@ -13,8 +14,10 @@
     <action id="PermanentDelete" keystroke="shift F8" alt_keystroke="shift meta BACK_SPACE"/>
     <action id="CompareFolders" keystroke="ctrl O"/>
     <action id="OpenInOtherPanel"/>
+    <action id="InternalView" keystroke="shift ctrl V"/>
     <action id="ToggleTree"/>
     <action id="ToggleHiddenFiles"/>
+    <action id="InternalEdit" keystroke="shift ctrl E"/>
     <action id="ShowBookmarksQL" keystroke="alt J"/>
     <action id="PasteClipboardFiles" keystroke="meta V"/>
     <action id="SetSameFolder" keystroke="shift ctrl O"/>

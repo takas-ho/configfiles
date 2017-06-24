@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<associations>
+   <association command="LibreOffice">
+     <filename value=".*\.odt"/>
+     <filename value=".*\.ods"/>
+     <filename value=".*\.odp"/>
+     <filename value=".*\.doc"/>
+     <filename value=".*\.xls"/>
+     <filename value=".*\.docx"/>
+     <filename value=".*\.xlsx"/>
+   </association>
+   <association command="gedit">
+     <filename value=".*\.xml"/>
+   </association>
+</associations>

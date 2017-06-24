@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<associations>
+   <command alias="jEdit" value="/usr/bin/jedit $f"/>
+   <command alias="gedit" value="/usr/bin/gedit $f"/>
+   <command alias="LibreOffice" value="/usr/bin/libreoffice $f"/>
+</associations>
+

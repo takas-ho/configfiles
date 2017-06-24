@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookmarks version="0.9.0">
+    <bookmark>
+        <name>takas-ho</name>
+        <location>/home/takas-ho/</location>
+    </bookmark>
+    <bookmark>
+        <name>work</name>
+        <location>/home/takas-ho/work/</location>
+    </bookmark>
+    <bookmark>
+        <name>Family</name>
+        <location>smb://192.168.0.1/Public/</location>
+    </bookmark>
+    <bookmark>
+        <name>ftp.daniel-soft.sakura</name>
+        <location>ftp://daniel-soft.sakura.ne.jp/home/daniel-soft</location>
+    </bookmark>
+</bookmarks>

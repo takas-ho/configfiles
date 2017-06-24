@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- See http://trac.mucommander.com/wiki/ActionKeyMap for information on how to customize this file -->
+<keymap version="0.9.0">
+    <action id="GoToHome" keystroke="ctrl H"/>
+    <action id="GoToParent" keystroke="BACK_SPACE"/>
+    <action id="Mkdir" keystroke="alt K"/>
+    <action id="MarkToLastRow" keystroke="shift ctrl END"/>
+    <action id="SwitchActiveTable" keystroke="RIGHT" alt_keystroke="LEFT"/>
+    <action id="CopyFilesToClipboard" keystroke="ctrl C"/>
+    <action id="Mkfile" keystroke="alt N"/>
+    <action id="Rename" keystroke="shift F6" alt_keystroke="F2"/>
+    <action id="ShowPreferences" keystroke="shift ctrl E"/>
+    <action id="Delete" keystroke="DELETE"/>
+    <action id="SwapFolders"/>
+    <action id="CompareFolders" keystroke="ctrl O"/>
+    <action id="OpenInOtherPanel"/>
+    <action id="ExploreBookmarks"/>
+    <action id="ToggleCommandBar" keystroke="alt R"/>
+    <action id="ShowBookmarksQL" keystroke="alt 4" alt_keystroke="alt J"/>
+    <action id="SetSameFolder" keystroke="shift O"/>
+    <action id="MarkToFirstRow" keystroke="shift ctrl HOME"/>
+    <action id="Refresh" keystroke="F5"/>
+    <action id="Open" keystroke="ENTER"/>
+    <action id="OpenTrash" keystroke="ctrl alt T"/>
+    <action id="Move" keystroke="alt M"/>
+    <action id="GoToRoot" keystroke="BACK_SLASH"/>
+    <action id="SelectFirstRow" keystroke="ctrl HOME"/>
+    <action id="Unpack" keystroke="ctrl U"/>
+    <action id="Copy" keystroke="alt C"/>
+    <action id="SelectLastRow" keystroke="ctrl END"/>
+    <action id="Pack" keystroke="ctrl P"/>
+</keymap>

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Links the passed filename to its new location
-function link_folder () {
+function link () {
     local filename=$1
     if [[ ! -e $filename ]]; then
         echo "$filename doesn't exist"
@@ -17,11 +17,6 @@ function link_folder () {
         echo "Linking $filename to $path"
         ln -s "$PWD/$filename" "$path"
     fi
-}
-
-function link () {
-    echo "Not implementation"
-    return
 }
 
 # Delete the linked file path
@@ -42,7 +37,7 @@ function unlink_geo () {
 function install_links () {
     for FOLDER in "${FOLDERS[@]}"
     do
-        link_folder $FOLDER
+        link $FOLDER
     done
     for FILE in "${FILES[@]}"
     do
@@ -78,7 +73,7 @@ if [ "$(uname)" == "Darwin" ]; then
     FILES=()
 elif [ "$(uname)" == "Linux" ]; then
     FOLDERS=("linux/.mucommander")
-    FILES=()
+    FILES=("linux/.config/Code/User/keybindings.json" "linux/.config/Code/User/settings.json")
 fi
 
 # Check whether the user is installing or removing

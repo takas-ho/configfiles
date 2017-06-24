@@ -1,0 +1,64 @@
+// 既定の設定を上書きするには、このファイル内に設定を挿入します
+{
+
+// エディター
+
+    // フォント サイズを制御します。
+    "editor.fontSize": 11,
+
+    // エディターで入力後に自動的に行の書式設定を行うかどうかを制御します
+    "editor.formatOnType": true,
+
+    // エディターで空白文字を表示するかどうかを制御します
+    "editor.renderWhitespace": true,
+
+    // Controls whether the editor should render control characters
+    "editor.renderControlCharacters": true,
+
+    // Controls whether the editor should render indent guides
+    "editor.renderIndentGuides": true,
+
+// ファイル
+
+    // 有効にすると、ファイルの保存時に末尾の空白をトリミングします。
+    "files.trimTrailingWhitespace": true,
+
+// Git
+
+    // 自動フェッチの有効/無効。
+    "git.autofetch": false,
+
+    // Git リポジトリを同期する前に確認します。
+    "git.confirmSync": true,
+
+// TypeScript
+
+    // 匿名関数の関数キーワードの後のスペース処理を定義します
+    "typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+
+    // 匿名関数の関数キーワードの後のスペース処理を定義します
+    "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+
+// TSLint configuration
+
+    // Control whether tslint is enabled for TypeScript files or not.
+    "tslint.enable": false,
+
+// ESLint configuration
+
+    // Control whether eslint is enabled for JavaScript files or not.
+    "eslint.enable": false,
+
+  // Suffix rule of unit test (case sensitive)
+  "unittest-switcher.unittest.suffix": [
+    "Spec",
+    "-spec",
+    "_spec",
+    ".spec",
+    "Test",
+    "-test",
+    ".test"
+],
+"workbench.colorTheme": "Monokai",
+"workbench.iconTheme": "vs-minimal"
+}

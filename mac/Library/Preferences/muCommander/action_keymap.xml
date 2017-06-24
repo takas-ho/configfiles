@@ -3,9 +3,9 @@
 <keymap version="0.9.2">
     <action id="GoToParent" keystroke="BACK_SPACE"/>
     <action id="Mkdir" keystroke="F7" alt_keystroke="ctrl K"/>
+    <action id="ConnectToServer"/>
     <action id="SwitchActiveTable" keystroke="LEFT" alt_keystroke="RIGHT"/>
     <action id="CopyFilesToClipboard" keystroke="meta C"/>
-    <action id="ConnectToServer"/>
     <action id="Mkfile" keystroke="shift F7" alt_keystroke="ctrl N"/>
     <action id="Rename" keystroke="F2"/>
     <action id="OpenInBothPanels"/>
@@ -25,7 +25,7 @@
     <action id="ChangeLocation" keystroke="shift ctrl J"/>
     <action id="Open" keystroke="ENTER"/>
     <action id="Move" keystroke="F6" alt_keystroke="ctrl M"/>
-    <action id="Unpack" keystroke="ctrl U"/>
     <action id="Copy" keystroke="F5" alt_keystroke="ctrl C"/>
+    <action id="Unpack" keystroke="ctrl U"/>
     <action id="Pack" keystroke="ctrl P"/>
 </keymap>

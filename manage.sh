@@ -73,7 +73,7 @@ if [ "$(uname)" == "Darwin" ]; then
     FILES=()
 elif [ "$(uname)" == "Linux" ]; then
     FOLDERS=("linux/.mucommander")
-    FILES=("linux/.config/Code/User/keybindings.json" "linux/.config/Code/User/settings.json")
+    FILES=("linux/.config/Code/User/keybindings.json" "linux/.config/Code/User/settings.json" "linux/.config/krusaderrc")
 fi
 
 # Check whether the user is installing or removing

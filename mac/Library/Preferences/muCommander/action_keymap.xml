@@ -20,6 +20,7 @@
     <action id="InternalEdit" keystroke="shift ctrl E"/>
     <action id="ShowBookmarksQL" keystroke="alt J"/>
     <action id="PasteClipboardFiles" keystroke="meta V"/>
+    <action id="NewWindow"/>
     <action id="SetSameFolder" keystroke="shift ctrl O"/>
     <action id="ChangeLocation" keystroke="shift ctrl J"/>
     <action id="Open" keystroke="ENTER"/>

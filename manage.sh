@@ -29,7 +29,6 @@ function unlink_geo () {
     local filename=$1
     local path="$HOME/${1#*/}"
 
-echo "hoge $path"
     if [ -e "$path" ]; then
         echo "Removing $path"
         rm "$path"

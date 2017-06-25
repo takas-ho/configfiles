@@ -23,6 +23,7 @@
     <action id="NewWindow"/>
     <action id="SetSameFolder" keystroke="shift ctrl O"/>
     <action id="ChangeLocation" keystroke="shift ctrl J"/>
+    <action id="ShowRecentLocationsQL" keystroke="alt H"/>
     <action id="Open" keystroke="ENTER"/>
     <action id="Move" keystroke="F6" alt_keystroke="ctrl M"/>
     <action id="Copy" keystroke="F5" alt_keystroke="ctrl C"/>

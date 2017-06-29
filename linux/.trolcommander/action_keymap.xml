@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- See http://trac.mucommander.com/wiki/ActionKeyMap for information on how to customize this file -->
+<keymap version="0.9.9">
+    <action id="CloseWindow" keystroke="meta W"/>
+    <action id="SwitchActiveTable" keystroke="LEFT" alt_keystroke="RIGHT"/>
+    <action id="CopyFilesToClipboard" keystroke="meta C"/>
+    <action id="OpenInBothPanels"/>
+    <action id="SwapFolders"/>
+    <action id="InternalView" keystroke="shift ctrl V"/>
+    <action id="ToggleTree"/>
+    <action id="NewWindow"/>
+    <action id="SetSameFolder" keystroke="shift ctrl O"/>
+    <action id="ChangeLocation" keystroke="shift ctrl J"/>
+    <action id="LocateSymlink" keystroke="shift ctrl S"/>
+    <action id="LeftArrowAction"/>
+    <action id="RightArrowAction"/>
+    <action id="Edit" keystroke="F4" alt_keystroke="shift ctrl E"/>
+    <action id="Terminal" keystroke="shift F10"/>
+    <action id="Email"/>
+    <action id="Unpack" keystroke="ctrl U"/>
+    <action id="CreateSymlink" keystroke="alt F7" alt_keystroke="ctrl S"/>
+    <action id="Pack" keystroke="ctrl P"/>
+</keymap>

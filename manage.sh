@@ -72,7 +72,7 @@ if [ "$(uname)" == "Darwin" ]; then
     FOLDERS=("mac/Library/Preferences/muCommander","mac/Library/Application Support/Code/User")
     FILES=()
 elif [ "$(uname)" == "Linux" ]; then
-    FOLDERS=("linux/.mucommander")
+    FOLDERS=("linux/.mucommander","linux/.trolcommander")
     FILES=("linux/.config/Code/User/keybindings.json","linux/.config/Code/User/settings.json","linux/.config/krusaderrc")
 fi
 

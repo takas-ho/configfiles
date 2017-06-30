@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <preferences version="0.9.9">
-<display_compact_file_size>true</display_compact_file_size>
-<time_format>hh:mm a</time_format>
+<display_compact_file_size>false</display_compact_file_size>
+<time_format>HH:mm:ss</time_format>
 <lookAndFeel>com.apple.laf.AquaLookAndFeel</lookAndFeel>
 <quit_confirmation>true</quit_confirmation>
 <show_splash_screen>true</show_splash_screen>
-<check_for_updates_on_startup>true</check_for_updates_on_startup>
+<preferred_encodings>UTF-8,UTF-16,ISO-8859-1,windows-1251,windows-1252,KOI8-R,Big5,GB18030,EUC-KR,Shift_JIS,ISO-2022-JP,EUC-JP,cp866</preferred_encodings>
+<check_for_updates_on_startup>false</check_for_updates_on_startup>
 <language>ja-JP</language>
-<date_format>MM/dd/yy</date_format>
+<date_format>yy/MM/dd</date_format>
 <enable_system_notifications>true</enable_system_notifications>
 <date_separator>/</date_separator>
 <macosx>
+<brushed_metal_look>false</brushed_metal_look>
 <screen_menu_bar>true</screen_menu_bar>
 </macosx>
 <editor>
@@ -25,6 +27,9 @@
 <ftp>
 <list_hidden_files>false</list_hidden_files>
 </ftp>
+<mail>
+<smtp_port>25.0</smtp_port>
+</mail>
 <log>
 <level>WARNING</level>
 <buffer_size>200</buffer_size>
@@ -36,6 +41,10 @@
 <status_bar>
 <visible>true</visible>
 </status_bar>
+<terminal>
+<use_custom_shell>false</use_custom_shell>
+<use_custom_external>false</use_custom_external>
+</terminal>
 <bonjour>
 <discovery_enabled>false</discovery_enabled>
 </bonjour>
@@ -43,15 +52,26 @@
 <icon_scale>1.0</icon_scale>
 <visible>true</visible>
 </toolbar>
+<progress_dialog>
+<expanded>true</expanded>
+<close_when_finished>true</close_when_finished>
+</progress_dialog>
 <command_bar>
 <icon_scale>1.0</icon_scale>
 <visible>true</visible>
 </command_bar>
 <shell>
 <history_size>100</history_size>
+<use_custom>false</use_custom>
+<autodetect_encoding>false</autodetect_encoding>
+<encoding>UTF-8</encoding>
 </shell>
 <startup_folder>
 <on_startup>lastFolders</on_startup>
+<custom_folders>
+<left>/Users/takas-ho</left>
+<right>/Users/takas-ho</right>
+</custom_folders>
 </startup_folder>
 <theme>
 <path>Trol</path>
@@ -60,6 +80,7 @@
 <file_table>
 <icon_scale>1.0</icon_scale>
 <show_single_tab_header>false</show_single_tab_header>
+<cd_follows_symlinks>false</cd_follows_symlinks>
 <show_system_folders>true</show_system_folders>
 <use_system_file_icons>applications</use_system_file_icons>
 <show_hidden_files>true</show_hidden_files>

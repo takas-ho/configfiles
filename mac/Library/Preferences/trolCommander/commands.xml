@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<commands>
+    <command alias="view" value="qlmanage -p $f" filemask="(?i).*\.jpg|.*\.gif|.*\.png|.*\.bmp|.*\.pdf|.*\.xmind" display="QuickLook"/>
+    <command alias="view" value="open -a mplayerx $f" filemask="*.flv" display="mplayerx"/>
+    <command alias="view" value="open -a vlc $f" filemask="*.flv" display="vlc"/>
+    <command alias="QuickLook" value="qlmanage -p $f" />
+ </commands>

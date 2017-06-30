@@ -69,7 +69,7 @@ if [[ $# != 1 ]]; then
 fi
 
 if [ "$(uname)" == "Darwin" ]; then
-    FOLDERS=("mac/Library/Preferences/muCommander","mac/Library/Application Support/Code/User")
+    FOLDERS=("mac/Library/Preferences/muCommander","mac/Library/Preferences/trolCommander","mac/Library/Application Support/Code/User")
     FILES=()
 elif [ "$(uname)" == "Linux" ]; then
     FOLDERS=("linux/.mucommander")

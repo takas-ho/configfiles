@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- See http://trac.mucommander.com/wiki/ActionKeyMap for information on how to customize this file -->
 <keymap version="0.9.9">
+    <action id="Pack" keystroke="meta I" alt_keystroke="ctrl P"/>
+    <action id="Edit" keystroke="F4" alt_keystroke="shift ctrl E"/>
+    <action id="LeftArrowAction"/>
+    <action id="Terminal" keystroke="shift F10"/>
+    <action id="Unpack" keystroke="meta P" alt_keystroke="ctrl U"/>
+    <action id="Copy" keystroke="F5" alt_keystroke="ctrl C"/>
+    <action id="RightArrowAction"/>
+    <action id="CreateSymlink" keystroke="alt F7" alt_keystroke="ctrl S"/>
+    <action id="Rename" keystroke="F2"/>
+    <action id="Move" keystroke="F6" alt_keystroke="ctrl M"/>
+    <action id="Mkfile" keystroke="shift F7" alt_keystroke="ctrl N"/>
+    <action id="Mkdir" keystroke="F7" alt_keystroke="ctrl K"/>
+    <action id="TerminalPanel"/>
+    <action id="SwitchActiveTable" keystroke="LEFT" alt_keystroke="RIGHT"/>
+    <action id="InternalView" keystroke="shift ctrl V"/>
 </keymap>

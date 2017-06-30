@@ -1,19 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- See http://trac.mucommander.com/wiki/ActionKeyMap for information on how to customize this file -->
 <keymap version="0.9.9">
-    <action id="Pack" keystroke="meta I" alt_keystroke="ctrl P"/>
-    <action id="Edit" keystroke="F4" alt_keystroke="shift ctrl E"/>
-    <action id="LeftArrowAction"/>
-    <action id="Terminal" keystroke="shift F10"/>
+    <action id="MarkGroup"/>
     <action id="Unpack" keystroke="meta P" alt_keystroke="ctrl U"/>
-    <action id="Copy" keystroke="F5" alt_keystroke="ctrl C"/>
-    <action id="RightArrowAction"/>
-    <action id="CreateSymlink" keystroke="alt F7" alt_keystroke="ctrl S"/>
-    <action id="Rename" keystroke="F2"/>
-    <action id="Move" keystroke="F6" alt_keystroke="ctrl M"/>
-    <action id="Mkfile" keystroke="shift F7" alt_keystroke="ctrl N"/>
-    <action id="Mkdir" keystroke="F7" alt_keystroke="ctrl K"/>
     <action id="TerminalPanel"/>
-    <action id="SwitchActiveTable" keystroke="LEFT" alt_keystroke="RIGHT"/>
     <action id="InternalView" keystroke="shift ctrl V"/>
+    <action id="Pack" keystroke="meta I" alt_keystroke="ctrl P"/>
+    <action id="Move" keystroke="F6" alt_keystroke="ctrl M"/>
+    <action id="CompareFiles" keystroke="shift ctrl M"/>
+    <action id="SwitchActiveTable" keystroke="LEFT" alt_keystroke="RIGHT"/>
+    <action id="GoToParentInBothPanels"/>
+    <action id="Edit" keystroke="F4" alt_keystroke="shift ctrl E"/>
+    <action id="GoToParentInOtherPanel"/>
+    <action id="LeftArrowAction"/>
+    <action id="ChangeLocation" keystroke="meta G" alt_keystroke="shift ctrl J"/>
+    <action id="RevealInDesktop" keystroke="meta L" alt_keystroke="ctrl L"/>
+    <action id="AddBookmark" keystroke="meta B" alt_keystroke="ctrl B"/>
+    <action id="Terminal" keystroke="shift F10"/>
+    <action id="ToggleTree"/>
+    <action id="ShowRecentLocationsQL" keystroke="alt H"/>
+    <action id="InvertSelection" keystroke="shift meta QUOTE"/>
+    <action id="ShowBookmarksQL" keystroke="ctrl J" alt_keystroke="alt J"/>
+    <action id="OpenInBothPanels"/>
+    <action id="UnmarkGroup"/>
+    <action id="GoBack" keystroke="alt LEFT" alt_keystroke="meta CLOSE_BRACKET"/>
+    <action id="RightArrowAction"/>
+    <action id="OpenInOtherPanel"/>
+    <action id="LocateSymlink" keystroke="shift ctrl S"/>
+    <action id="CompareFolders" keystroke="shift meta O"/>
+    <action id="Mkdir" keystroke="F7" alt_keystroke="ctrl K"/>
+    <action id="Copy" keystroke="F5" alt_keystroke="ctrl C"/>
+    <action id="RecallWindow4"/>
+    <action id="GoToHome" keystroke="ctrl H" alt_keystroke="meta HOME"/>
+    <action id="RecallWindow3"/>
+    <action id="Mkfile" keystroke="shift F7" alt_keystroke="ctrl N"/>
+    <action id="Refresh" keystroke="F9" alt_keystroke="ctrl R"/>
+    <action id="CreateSymlink" keystroke="alt F7" alt_keystroke="ctrl S"/>
+    <action id="SetSameFolder" keystroke="meta E" alt_keystroke="shift ctrl O"/>
+    <action id="Rename" keystroke="F2"/>
 </keymap>

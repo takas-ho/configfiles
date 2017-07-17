@@ -4,4 +4,5 @@
     <command alias="view" value="open -a mplayerx $f" filemask="*.flv" display="mplayerx"/>
     <command alias="view" value="open -a vlc $f" filemask="*.flv" display="vlc"/>
     <command alias="QuickLook" value="qlmanage -p $f" />
+    <command alias="MPlayerX" value="open -a mplayerx $f" />
  </commands>

@@ -3,4 +3,7 @@
     <association command="QuickLook">
         <filename value="(?i).*\.jpg|.*\.gif|.*\.png|.*\.bmp|.*\.pdf|.*\.xmind" />
     </association>
+   <association command="MPlayerX">
+       <filename value="(?i).*\.asf|.*\.avi|.*\.mov|.*\.flx|.*\.mpg|.*\.mp4" />
+   </association>
 </associations>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookmarks version="0.9.9">
+    <bookmark>
+        <name>family</name>
+        <location>/mnt/family</location>
+    </bookmark>
+    <bookmark>
+        <name>Q:family</name>
+        <location>smb://192.168.0.1/Public</location>
+    </bookmark>
+    <bookmark>
+        <name>Downloads</name>
+        <location>/home/takas-ho/Downloads</location>
+    </bookmark>
+    <bookmark>
+        <name>0:tmp</name>
+        <location>/home/takas-ho/tmp</location>
+    </bookmark>
+    <bookmark>
+        <name>Archive.linux</name>
+        <location>/home/takas-ho/Data/Archive.linux</location>
+    </bookmark>
+    <bookmark>
+        <name>My Documents</name>
+        <location>/home/takas-ho/Data.Win/My Documents</location>
+    </bookmark>
+    <bookmark>
+        <name>mp3</name>
+        <location>/home/takas-ho/Data/Music/mp3</location>
+    </bookmark>
+    <bookmark>
+        <name>work</name>
+        <location>/home/takas-ho/work</location>
+    </bookmark>
+</bookmarks>

@@ -4,3 +4,7 @@
 /mac/Library/Preferences/trolCommander/shell_history.xml
 /mac/Library/Preferences/trolCommander/snapshot.xml
 /mac/Library/Preferences/trolCommander/*.history
+/linux/.trolcommander/snapshot.xml
+/linux/.trolcommander/shell_history.xml
+/linux/.trolcommander/windows.list
+/linux/.trolcommander/textfiles.history

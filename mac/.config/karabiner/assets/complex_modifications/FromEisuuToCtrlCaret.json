@@ -1,0 +1,16 @@
+{
+  "title": "VirtualBoxのWindowsで`英数`キーをCTRL+^に",
+  "rules": [
+    {
+      "description": "VirtualBoxのWindowsで`かな`キーも`英数`キーも`全角/半角`なので、`英数`キーをCTRL+^にして区別可能にする",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": { "key_code": "japanese_eisuu", "modifiers": { "optional": [ "any" ] } },
+          "to": [ { "key_code": "equal_sign" , "modifiers" : [ "left_control" ] } ],
+          "conditions": [ { "type": "frontmost_application_if", "bundle_identifiers": [ "^org\\.virtualbox\\.app\\.VirtualBoxVM$" ] } ]
+        }
+      ]
+    }
+  ]
+}

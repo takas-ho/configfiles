@@ -69,7 +69,7 @@ if [[ $# != 1 ]]; then
 fi
 
 if [ "$(uname)" == "Darwin" ]; then
-    FOLDERS=("mac/Library/Preferences/muCommander","mac/Library/Preferences/trolCommander","mac/Library/Application Support/Code/User")
+    FOLDERS=("mac/Library/Preferences/muCommander","mac/Library/Preferences/trolCommander","mac/Library/Application Support/Code/User","mac/Library/Application Support/org.yanex.marta")
     FILES=("mac/.config/karabiner/assets/complex_modifications/FromEscapeToJapanese_eisuu.json", "mac/.config/karabiner/assets/complex_modifications/FromEisuuToCtrlYen.json", "mac/.config/karabiner/assets/complex_modifications/FromEisuuToCtrlCaret.json")
 elif [ "$(uname)" == "Linux" ]; then
     FOLDERS=("linux/.mucommander","linux/.trolcommander")

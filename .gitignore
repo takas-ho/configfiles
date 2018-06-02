@@ -8,3 +8,5 @@
 /linux/.trolcommander/shell_history.xml
 /linux/.trolcommander/windows.list
 /linux/.trolcommander/textfiles.history
+.DS_Store
+/mac/Library/Application\ Support/org.yanex.marta/state.json

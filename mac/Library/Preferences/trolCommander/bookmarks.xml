@@ -14,7 +14,7 @@
     </bookmark>
     <bookmark>
         <name>0:tmp</name>
-        <location>/Users/takas-ho/.tmp/</location>
+        <location>/Users/takas-ho/tmp/</location>
     </bookmark>
     <bookmark>
         <name>Archive</name>
@@ -23,5 +23,13 @@
     <bookmark>
         <name>iPod.touch</name>
         <location>/Users/takas-ho/Data/iPod.touch/</location>
+    </bookmark>
+    <bookmark>
+        <name>takasaki.daniel-soft.com</name>
+        <location>sftp://takasaki.daniel-soft.com</location>
+    </bookmark>
+    <bookmark>
+        <name>Photos</name>
+        <location>/Users/takas-ho/Pictures/写真ライブラリ.photoslibrary/Masters/</location>
     </bookmark>
 </bookmarks>

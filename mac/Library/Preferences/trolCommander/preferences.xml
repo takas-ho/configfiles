@@ -3,7 +3,7 @@
 <display_compact_file_size>false</display_compact_file_size>
 <time_format>HH:mm:ss</time_format>
 <lookAndFeel>com.apple.laf.AquaLookAndFeel</lookAndFeel>
-<quit_confirmation>true</quit_confirmation>
+<quit_confirmation>false</quit_confirmation>
 <show_splash_screen>true</show_splash_screen>
 <preferred_encodings>UTF-8,UTF-16,ISO-8859-1,windows-1251,windows-1252,KOI8-R,Big5,GB18030,EUC-KR,Shift_JIS,ISO-2022-JP,EUC-JP,cp866</preferred_encodings>
 <check_for_updates_on_startup>false</check_for_updates_on_startup>
@@ -17,7 +17,7 @@
 </macosx>
 <editor>
 <syntax>
-<path>Default</path>
+<path>Dark</path>
 </syntax>
 </editor>
 <auto_refresh>
@@ -88,4 +88,12 @@
 <auto_size_columns>true</auto_size_columns>
 <show_folders_first>true</show_folders_first>
 </file_table>
+<find_file>
+<archives>false</archives>
+<ignore_hidden>true</ignore_hidden>
+<case_sensitive>false</case_sensitive>
+<search_hex>false</search_hex>
+<encoding>UTF-8</encoding>
+<subdirectories>true</subdirectories>
+</find_file>
 </preferences>

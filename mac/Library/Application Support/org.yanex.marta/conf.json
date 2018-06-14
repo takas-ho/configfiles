@@ -149,7 +149,22 @@
         "ephemeralTabs": ["Helvetica Neue Bold Italic", 12]
     },
 
-    "gadgets": [],
+    "gadgets": [
+        {
+            "id": "MacVim.Edit",
+            "name": "MacVim gvim",
+            "type": "application", // application launcher
+            "application": "MacVim",
+            "files": [ "${active.selection.paths}" ] // pass the selected files
+        },
+        {
+            "id": "meld.compare.selection", // change this to some id
+            "name": "Meld compare selection",
+            "type": "executable", // application launcher
+            "executable": "/usr/local/bin/meld", // absolute path to executable
+            "args": [ "${active.selection.paths}", "${inactive.selection.paths}" ] // pass the selected files
+        }
+    ],
 
     // Action key bindings. Each action may have several bindings, and several actions may share
     // a common key binding (if more than one action is applicabl   e, the menu will be shown).
@@ -181,6 +196,8 @@
         "core.toggle.show.hidden.files": ["Control+H"],
         "core.preview": ["Cmd+Y", "Space"],
         "core.open.terminal.here": ["F11"],
+        "MacVim.Edit": ["Cmd+Shift+E"],
+        "meld.compare.selection": ["Cmd+Shift+M"],
         "core.edit": ["F4"],
         "core.open.editor.here": ["Shift+F4"],
         "core.copy.to.clipboard": ["Cmd+C"],

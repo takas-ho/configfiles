@@ -1,0 +1,30 @@
+[
+  {
+    "name" : "Family",
+    "path" : "\/Volumes\/Public"
+  },
+  {
+    "name" : "Downloads",
+    "path" : "\/Users\/takas-ho\/Downloads"
+  },
+  {
+    "name" : "work",
+    "path" : "\/Users\/takas-ho\/work"
+  },
+  {
+    "name" : "Photoslibrary",
+    "path" : "\/Users\/takas-ho\/Pictures\/写真ライブラリ.photoslibrary\/Masters"
+  },
+  {
+    "name" : "Archive",
+    "path" : "\/Users\/takas-ho\/Data\/Archive\/mac"
+  },
+  {
+    "name" : "iPod.touch",
+    "path" : "\/Users\/takas-ho\/Data\/iPod.touch"
+  },
+  {
+    "name" : "tmp",
+    "path" : "\/Users\/takas-ho\/tmp"
+  }
+]

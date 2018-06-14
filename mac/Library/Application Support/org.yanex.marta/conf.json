@@ -1,0 +1,440 @@
+// This is the user configuration. It is empty by default.
+
+// All possible keys are described in the default configuration file.
+// To open it, run the "Open default configuration" action.
+
+{
+    "behavior": {
+        // Active theme
+        // Dark, Classic, Commander, Sakura
+        //"theme": "Classic",
+
+        // System control style ("fromTheme", "default", "dark")
+        "controlStyle": "fromTheme",
+
+        // Show dialogs as macOS sheet windows. Disable this if you hate the dialog animations
+        "sheetDialogs": true,
+
+        // Always show overlay scroll bars (even if mouse is attached or if "Show scroll bars" is set to "Always")
+        "forceOverlayScrollBars": true,
+
+        // Default date format (here is the specification http://apple.co/2CM6VFG)
+        // "dateFormat": "%x %X",
+        "dateFormat": "%y/%m/%d %T",
+
+        // Show both default and user configuration files (works only in Sublime Text)
+        "doublePaneConfigurationInSublime": true,
+
+        "actionBar": {
+            // Show action bar on the bottom/
+            "show": true
+        },
+
+        "menu": {
+            // True if the first item should be automatically selected when a popup menu opens
+            "preselectFirstItem": false
+        },
+
+        "quickSelect": {
+            // Match only the string prefix by the word matcher (instead of word matching)
+            "matchOnlyPrefix": false,
+
+            // Use this mode by default in Quick Select (/regex, \substring, `word)
+            "defaultMode": "word",
+
+            // Activate Quick Select on typing automatically (if `false`, you will need to firstly press '/')
+            // "activateOnAnyCharacter": true,
+            "activateOnAnyCharacter": true,
+
+            // Filter matched items (and filter out non-matched) instead of just highlighting
+            // "filterMatchedItems": false
+            "filterMatchedItems": true
+        },
+
+        "actions": {
+            // Show confirmation before moving files to the Trash
+            "core.trash.confirm": true,
+
+            // Show confirmation before deleting items
+            "core.delete.confirm": true,
+
+            // Show pinned places in "Favorites" menu
+            "core.favorites.showPinnedPlaces": true,
+
+            // Allow to specify the target directory before copying or moving
+            "core.copy.askTargetPath": true,
+
+            // "prefix" matches only beginning, "substring" matches the entire substring
+            // "core.lookup.mode": "prefix",
+            "core.lookup.mode": "substring",
+
+            // Activate the first tab after the last in "Activate next tab" (also for the reverse action)
+            "core.activate.next.tab.circular": true
+        },
+
+        "table": {
+            // Show the ".." directory
+            "showGoUpDirectory": true,
+
+            // Select ".." on directory enter
+            "selectGoUpDirectoryOnEnter": true,
+
+            // Show the file icons
+            "showIcons": true,
+
+            // Use alternate row background
+            "useAlternateColor": true,
+
+            // File icon size
+            "iconSize": 16,
+
+            // Select the first item after the last
+            "circularSelection": false,
+
+            // The prefix of the directory names (e.g. "/", "[")
+            "directoryPrefix": "",
+
+            // The suffix of the directory names (e.g. "]")
+            "directorySuffix": ""
+        },
+
+        "files": {
+            // Update the list automatically using the file watcher if available
+            "fileWatcher": true,
+
+            // Support drag-drop in the file list
+            "dragDrop": true,
+
+            // File filter applied to all panes
+            "globalFilter": {
+                "alwaysShowDirectories": true,
+
+                // The list of && regular expressions
+                // Syntax: https://developer.apple.com/documentation/foundation/nsregularexpression#1661042
+                "name": [
+                    "^(?!\\.DS_Store$).*$"
+                ]
+            }
+        },
+
+        "volumeSpace": {
+            // "always", "external" (show only for external volumes), "never"
+            "show": "always",
+
+            // Available variables: 'availableSpace', 'totalSpace', 'availablePercent'
+            "format": "${availableSpace} (${availablePercent}) available"
+        }
+    },
+
+    "fonts": {
+        // File list font
+        "files": ["Helvetica Neue", 13],
+
+        // Breadcrumbs font
+        "breadcrumbs": ["Helvetica Neue", 13],
+
+        // Table header font
+        "tableHeader": ["Helvetica Neue", 12],
+
+        // Status bar font
+        "statusBar": ["Helvetica Neue", 12],
+
+        // Action bar button font
+        "actionBar": ["Helvetica Neue", 13],
+
+        // Tabs font
+        "tabs": ["Helvetica Neue", 13],
+
+        // Ephemeral (virtual) tabs font
+        "ephemeralTabs": ["Helvetica Neue Bold Italic", 12]
+    },
+
+    "gadgets": [
+        {
+            "id": "MacVim.Edit",
+            "name": "MacVim gvim",
+            "type": "application", // application launcher
+            "application": "MacVim",
+            "files": [ "${active.selection.paths}" ] // pass the selected files
+        },
+        {
+            "id": "meld.compare.selection", // change this to some id
+            "name": "Meld compare selection",
+            "type": "executable", // application launcher
+            "executable": "/usr/local/bin/meld", // absolute path to executable
+            "args": [ "${active.selection.paths}", "${inactive.selection.paths}" ] // pass the selected files
+        }
+    ],
+
+    // Action key bindings. Each action may have several bindings, and several actions may share
+    // a common key binding (if more than one action is applicabl   e, the menu will be shown).
+    "keyBindings": {
+        "core.change.current.pane": ["Left","Right"],
+        "core.move.up": ["Up"],
+        "core.select.move.up": ["Shift+Up"],
+        "core.move.down": ["Down"],
+        "core.select.move.down": ["Shift+Down"],
+        // "core.move.left": ["Left"],
+        "core.move.left": [],
+        "core.select.move.left": ["Shift+Left"],
+        // "core.move.right": ["Right"],
+        "core.move.right": [],
+        "core.select.move.right": ["Shift+Right"],
+        "core.move.home": ["Home"],
+        "core.move.end": ["End"],
+        "core.move.page.up": ["PageUp"],
+        "core.move.page.down": ["PageDown"],
+        "core.move.half.page.up": ["Alt+PageUp"],
+        "core.move.half.page.down": ["Alt+PageDown"],
+        "core.documentation": ["F1"],
+        // "core.open": ["Return", "Cmd+Down"],
+        //"core.open": ["Cmd+Down", "Cmd+O", "Right"],
+        //"core.go.up": ["Backspace", "Cmd+Up", "Left"],
+        "core.trash": ["F8", "Cmd+Backspace"],
+        "core.select.all": ["Cmd+A"],
+        "core.deselect.all": ["Escape"],
+        "core.toggle.show.hidden.files": ["Control+H"],
+        "core.preview": ["Cmd+Y", "Space"],
+        "core.open.terminal.here": ["F11"],
+        "MacVim.Edit": ["Cmd+Shift+E"],
+        "meld.compare.selection": ["Cmd+Shift+M"],
+        "core.edit": ["F4"],
+        "core.open.editor.here": ["Shift+F4"],
+        "core.copy.to.clipboard": ["Cmd+C"],
+        "core.paste": ["Cmd+V"],
+        "core.copy": ["F5"],
+        "core.move": ["F6"],
+        "core.rename": ["F2"],
+        //"core.rename": ["Return"],
+        "core.new.file": ["Shift+F7"],
+        "core.new.directory": ["F7", "Cmd+Shift+N"],
+        "core.refresh": ["Cmd+R"],
+        "core.get.info": ["Cmd+I"],
+        "core.copy.current.dir.path": ["F12"],
+        "core.copy.selected.paths": ["Cmd+F12"],
+        "core.delete": ["Shift+F8"],
+        "core.actions": ["Shift+Cmd+P"],
+        "core.history": ["Alt+3"],
+        "core.back": ["Alt+Left"],
+        "core.forward": ["Alt+Right"],
+        "core.favorites": ["Alt+2", "Cmd+J"],
+        "core.add.to.favorites.here": ["Shift+Alt+2"],
+        "core.volumes": ["Alt+1"],
+        "core.hierarchy": ["Alt+0"],
+        "core.goto.path": ["Cmd+G"],
+        "core.clone.to.right": ["Cmd+Right"],
+        "core.clone.to.left": ["Cmd+Left"],
+        "core.clone.current.directory.to.right": ["Shift+Cmd+Right"],
+        "core.clone.current.directory.to.left": ["Shift+Cmd+Left"],
+        "core.new.window": ["Cmd+N"],
+        "core.new.tab": ["Cmd+T"],
+        "core.close.tab": ["Cmd+W"],
+        "core.activate.tab.1": ["Cmd+1"],
+        "core.activate.tab.2": ["Cmd+2"],
+        "core.activate.tab.3": ["Cmd+3"],
+        "core.activate.tab.4": ["Cmd+4"],
+        "core.activate.tab.5": ["Cmd+5"],
+        "core.activate.tab.6": ["Cmd+6"],
+        "core.activate.tab.7": ["Cmd+7"],
+        "core.activate.tab.8": ["Cmd+8"],
+        "core.activate.tab.9": ["Cmd+9"],
+        "core.activate.next.tab": ["Cmd+Shift+]"],
+        "core.activate.previous.tab": ["Cmd+Shift+["],
+        "core.lookup": ["Cmd+P"],
+        "core.lookup.here": ["Cmd+Alt+P"],
+        // "core.toggle.terminal": ["Cmd+Alt+O"],
+        // "core.toggle.terminal": ["Cmd+Alt+O"],
+        "core.activate.terminal": ["Cmd+T"],
+        "core.show.operation.queue": ["="]
+    },
+
+//    "menu": [
+//        {
+//            "name": "File",
+//            "children": [
+//                "core.new.file",
+//                "core.new.directory",
+//                "separator",
+//
+//                "core.open",
+//                "core.open.with",
+//                "core.edit",
+//                "core.preview",
+//                "separator",
+//
+//                "core.rename",
+//                "core.copy",
+//                "core.move",
+//                "separator",
+//
+//                "core.delete",
+//                "core.trash"
+//            ]
+//        },
+//        {
+//            "name": "Edit",
+//            "children": [
+//                "core.copy.to.clipboard",
+//                "core.paste",
+//                "separator",
+//
+//                "core.select.all",
+//                "core.deselect.all",
+//                "core.invert.selection",
+//                "separator",
+//
+//                "core.select.group",
+//                "core.deselect.group"
+//            ]
+//        },
+//        {
+//            "name": "View",
+//            "children": [
+//                "core.display.mode",
+//                "core.edit.columns",
+//                "core.ordering",
+//                "separator",
+//
+//                "core.toggle.show.hidden.files",
+//                "core.refresh"
+//            ]
+//        },
+//        {
+//            "name": "Go",
+//            "children": [
+//                "core.back",
+//                "core.forward",
+//                "separator",
+//
+//                "core.go.up",
+//                "core.hierarchy",
+//                "separator",
+//
+//                "core.favorites",
+//                "core.add.to.favorites.here",
+//                "separator",
+//
+//                "core.volumes",
+//                "core.history",
+//                "separator",
+//
+//                "core.goto.path"
+//            ]
+//        },
+//        {
+//            "name": "Tools",
+//            "children": [
+//                "core.actions",
+//                "separator",
+//
+//                "core.activate.terminal",
+//                "core.toggle.terminal",
+//                "separator",
+//
+//                "core.copy.selected.paths",
+//                "core.copy.current.dir.path",
+//                "separator",
+//
+//                "org.yanex.dirstat.open",
+//                "separator",
+//
+//                "core.locate.in.finder",
+//                "core.open.terminal.here"
+//            ]
+//        },
+//        {
+//            "name": "Window",
+//            "children": [
+//                "core.new.window",
+//                "core.new.tab",
+//                "separator",
+//
+//                "core.close.window",
+//                "core.close.tab",
+//                "separator",
+//
+//                "core.activate.previous.tab",
+//                "core.activate.next.tab",
+//                "core.wrap.panes"
+//            ]
+//        }
+//    ],
+
+    "setup": {
+        // Pinned places (shown above the favorite items).
+        "pinnedPlaces": [
+            {"path": "user.home"},
+            {"path": "user.downloads"},
+            {"path": "user.documents"},
+            {"path": "user.desktop"},
+            {"path": "user.library", "name": "Library"},
+            {"path": "system.applications"}
+        ],
+
+        // Action buttons displayed in the action bar
+        "actionBar": [
+            "core.open.with",
+            "core.edit",
+            "core.copy",
+            "core.move",
+            "core.rename",
+            "core.new.directory",
+            "core.delete"
+        ],
+
+        // Touch Bar items
+        "touchBar": [
+            { "action": "core.favorites" },
+            { "action": "core.history" },
+            { "action": "core.toggle.show.hidden.files" },
+            { "action": "core.edit", "modifiers": "-Shift" },
+            { "action": "core.open.editor.here", "modifiers": "Shift" },
+            { "action": "core.new.directory", "backgroundColor": "#624a2d", "modifiers": "-Shift" },
+            { "action": "core.new.file", "backgroundColor": "#624a2d", "modifiers": "Shift" },
+            { "action": "core.copy", "backgroundColor": "#495e4d" },
+            { "action": "core.move", "backgroundColor": "#3c4554", "modifiers": "-Shift" },
+            { "action": "core.rename", "backgroundColor": "#3c4554", "modifiers": "Shift" },
+            { "action": "core.trash", "backgroundColor": "#5f0405", "modifiers": "-Shift" },
+            { "action": "core.delete", "backgroundColor": "#5f0405", "modifiers": "Shift" }
+        ]
+    },
+
+    // Embedded Terminal settings
+    "etty": {
+        // Terminal theme
+        "theme": "Pastel",
+
+        // Use the file list colors for the background/foreground
+        "useMainThemeColors": true,
+
+        // Dim text when the terminal panel is not focused
+        "dimWhenUnfocused": true,
+
+        // Propagate 'cd's to the file pane
+        "chdirToPane": true,
+
+        // Propagate current directory changes to the terminal
+        "chdirToTerminal": true,
+
+        // Paste text in the clipboard on right mouse click
+        "pasteOnRightClick": true,
+
+        // Copy text on selection automatically
+        "copyOnSelection": true,
+
+        // Add leading space (' cd' instead of 'cd') to directory change commands
+        "leadingSpaceOnCd": true,
+
+        // Terminal fonts ("bold", "italic", "boldItalic" fonts are also available)
+        "fonts": {
+            "normal": ["Monaco", 13]
+        },
+
+        // Custom environment variables
+        "environ": {
+            //"key": "value"
+            // NOT WORKING
+            "terminal": "/Applications/iTerm.app"
+        }
+    }
+}

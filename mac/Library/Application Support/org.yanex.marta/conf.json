@@ -20,7 +20,7 @@
 
         // Default date format (here is the specification http://apple.co/2CM6VFG)
         // "dateFormat": "%x %X",
-        "dateFormat": "%x",
+        "dateFormat": "%y/%m/%d %T",
 
         // Show both default and user configuration files (works only in Sublime Text)
         "doublePaneConfigurationInSublime": true,

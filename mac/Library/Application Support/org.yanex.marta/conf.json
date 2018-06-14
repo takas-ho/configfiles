@@ -217,7 +217,7 @@
         "core.history": ["Alt+3"],
         "core.back": ["Alt+Left"],
         "core.forward": ["Alt+Right"],
-        "core.favorites": ["Alt+2"],
+        "core.favorites": ["Alt+2", "Cmd+J"],
         "core.add.to.favorites.here": ["Shift+Alt+2"],
         "core.volumes": ["Alt+1"],
         "core.hierarchy": ["Alt+0"],

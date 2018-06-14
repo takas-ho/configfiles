@@ -231,117 +231,117 @@
         "core.show.operation.queue": ["="]
     },
 
-    "menu": [
-        {
-            "name": "File",
-            "children": [
-                "core.new.file",
-                "core.new.directory",
-                "separator",
-
-                "core.open",
-                "core.open.with",
-                "core.edit",
-                "core.preview",
-                "separator",
-
-                "core.rename",
-                "core.copy",
-                "core.move",
-                "separator",
-
-                "core.delete",
-                "core.trash"
-            ]
-        },
-        {
-            "name": "Edit",
-            "children": [
-                "core.copy.to.clipboard",
-                "core.paste",
-                "separator",
-
-                "core.select.all",
-                "core.deselect.all",
-                "core.invert.selection",
-                "separator",
-
-                "core.select.group",
-                "core.deselect.group"
-            ]
-        },
-        {
-            "name": "View",
-            "children": [
-                "core.display.mode",
-                "core.edit.columns",
-                "core.ordering",
-                "separator",
-
-                "core.toggle.show.hidden.files",
-                "core.refresh"
-            ]
-        },
-        {
-            "name": "Go",
-            "children": [
-                "core.back",
-                "core.forward",
-                "separator",
-
-                "core.go.up",
-                "core.hierarchy",
-                "separator",
-
-                "core.favorites",
-                "core.add.to.favorites.here",
-                "separator",
-
-                "core.volumes",
-                "core.history",
-                "separator",
-
-                "core.goto.path"
-            ]
-        },
-        {
-            "name": "Tools",
-            "children": [
-                "core.actions",
-                "separator",
-
-                "core.activate.terminal",
-                "core.toggle.terminal",
-                "separator",
-
-                "core.copy.selected.paths",
-                "core.copy.current.dir.path",
-                "separator",
-
-                "org.yanex.dirstat.open",
-                "separator",
-
-                "core.locate.in.finder",
-                "core.open.terminal.here"
-            ]
-        },
-        {
-            "name": "Window",
-            "children": [
-                "core.new.window",
-                "core.new.tab",
-                "separator",
-
-                "core.close.window",
-                "core.close.tab",
-                "separator",
-
-                "core.activate.previous.tab",
-                "core.activate.next.tab",
-                "core.wrap.panes"
-            ]
-        }
-    ],
+//    "menu": [
+//        {
+//            "name": "File",
+//            "children": [
+//                "core.new.file",
+//                "core.new.directory",
+//                "separator",
+//
+//                "core.open",
+//                "core.open.with",
+//                "core.edit",
+//                "core.preview",
+//                "separator",
+//
+//                "core.rename",
+//                "core.copy",
+//                "core.move",
+//                "separator",
+//
+//                "core.delete",
+//                "core.trash"
+//            ]
+//        },
+//        {
+//            "name": "Edit",
+//            "children": [
+//                "core.copy.to.clipboard",
+//                "core.paste",
+//                "separator",
+//
+//                "core.select.all",
+//                "core.deselect.all",
+//                "core.invert.selection",
+//                "separator",
+//
+//                "core.select.group",
+//                "core.deselect.group"
+//            ]
+//        },
+//        {
+//            "name": "View",
+//            "children": [
+//                "core.display.mode",
+//                "core.edit.columns",
+//                "core.ordering",
+//                "separator",
+//
+//                "core.toggle.show.hidden.files",
+//                "core.refresh"
+//            ]
+//        },
+//        {
+//            "name": "Go",
+//            "children": [
+//                "core.back",
+//                "core.forward",
+//                "separator",
+//
+//                "core.go.up",
+//                "core.hierarchy",
+//                "separator",
+//
+//                "core.favorites",
+//                "core.add.to.favorites.here",
+//                "separator",
+//
+//                "core.volumes",
+//                "core.history",
+//                "separator",
+//
+//                "core.goto.path"
+//            ]
+//        },
+//        {
+//            "name": "Tools",
+//            "children": [
+//                "core.actions",
+//                "separator",
+//
+//                "core.activate.terminal",
+//                "core.toggle.terminal",
+//                "separator",
+//
+//                "core.copy.selected.paths",
+//                "core.copy.current.dir.path",
+//                "separator",
+//
+//                "org.yanex.dirstat.open",
+//                "separator",
+//
+//                "core.locate.in.finder",
+//                "core.open.terminal.here"
+//            ]
+//        },
+//        {
+//            "name": "Window",
+//            "children": [
+//                "core.new.window",
+//                "core.new.tab",
+//                "separator",
+//
+//                "core.close.window",
+//                "core.close.tab",
+//                "separator",
+//
+//                "core.activate.previous.tab",
+//                "core.activate.next.tab",
+//                "core.wrap.panes"
+//            ]
+//        }
+//    ],
 
     "setup": {
         // Pinned places (shown above the favorite items).

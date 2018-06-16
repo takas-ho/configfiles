@@ -4,6 +4,10 @@
 // To open it, run the "Open default configuration" action.
 
 {
+    "environment": {
+        "textEditor": "MacVim"
+    },
+
     "behavior": {
         // Active theme
         // Dark, Classic, Commander, Sakura

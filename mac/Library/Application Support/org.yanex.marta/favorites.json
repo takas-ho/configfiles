@@ -20,6 +20,10 @@
     "path" : "\/Users\/takas-ho\/Data\/iPod.touch"
   },
   {
+    "name" : "Music",
+    "path" : "\/Users\/takas-ho\/Data\/Music"
+  },
+  {
     "name" : "tmp",
     "path" : "\/Users\/takas-ho\/tmp"
   }

@@ -4,8 +4,11 @@
 // To open it, run the "Open default configuration" action.
 
 {
+    // Custom environment variables
     "environment": {
+        //"key": "value"
         "textEditor": "MacVim"
+        //"terminal": "/Applications/iTerm.app"
     },
 
     "behavior": {
@@ -431,13 +434,6 @@
         // Terminal fonts ("bold", "italic", "boldItalic" fonts are also available)
         "fonts": {
             "normal": ["Monaco", 13]
-        },
-
-        // Custom environment variables
-        "environ": {
-            //"key": "value"
-            // NOT WORKING
-            "terminal": "/Applications/iTerm.app"
         }
     }
 }

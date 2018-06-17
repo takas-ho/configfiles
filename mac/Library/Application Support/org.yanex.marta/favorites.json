@@ -4,10 +4,6 @@
     "path" : "\/Volumes\/Public"
   },
   {
-    "name" : "Downloads",
-    "path" : "\/Users\/takas-ho\/Downloads"
-  },
-  {
     "name" : "work",
     "path" : "\/Users\/takas-ho\/work"
   },
@@ -22,6 +18,10 @@
   {
     "name" : "iPod.touch",
     "path" : "\/Users\/takas-ho\/Data\/iPod.touch"
+  },
+  {
+    "name" : "Music",
+    "path" : "\/Users\/takas-ho\/Data\/Music"
   },
   {
     "name" : "tmp",

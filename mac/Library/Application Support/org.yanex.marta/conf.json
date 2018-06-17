@@ -4,6 +4,13 @@
 // To open it, run the "Open default configuration" action.
 
 {
+    // Custom environment variables
+    "environment": {
+        //"key": "value"
+        "textEditor": "MacVim"
+        //"terminal": "/Applications/iTerm.app"
+    },
+
     "behavior": {
         // Active theme
         // Dark, Classic, Commander, Sakura
@@ -40,11 +47,10 @@
             "matchOnlyPrefix": false,
 
             // Use this mode by default in Quick Select (/regex, \substring, `word)
-            "defaultMode": "word",
+            "defaultMode": "substring",
 
             // Activate Quick Select on typing automatically (if `false`, you will need to firstly press '/')
-            // "activateOnAnyCharacter": true,
-            "activateOnAnyCharacter": true,
+            "activateOnAnyCharacter": false,
 
             // Filter matched items (and filter out non-matched) instead of just highlighting
             // "filterMatchedItems": false
@@ -169,31 +175,31 @@
     // Action key bindings. Each action may have several bindings, and several actions may share
     // a common key binding (if more than one action is applicabl   e, the menu will be shown).
     "keyBindings": {
-        "core.change.current.pane": ["Left","Right"],
-        "core.move.up": ["Up"],
-        "core.select.move.up": ["Shift+Up"],
-        "core.move.down": ["Down"],
-        "core.select.move.down": ["Shift+Down"],
+        "core.change.current.pane": ["Left", "Right", "Tab", "H", "L", "T"],
+        "core.move.up": ["Up", "K"],
+        "core.select.move.up": ["Shift+Up", "Shift+K"],
+        "core.move.down": ["Down", "J"],
+        "core.select.move.down": ["Shift+Down", "Shift+J"],
         // "core.move.left": ["Left"],
         "core.move.left": [],
         "core.select.move.left": ["Shift+Left"],
         // "core.move.right": ["Right"],
         "core.move.right": [],
         "core.select.move.right": ["Shift+Right"],
-        "core.move.home": ["Home"],
-        "core.move.end": ["End"],
-        "core.move.page.up": ["PageUp"],
-        "core.move.page.down": ["PageDown"],
-        "core.move.half.page.up": ["Alt+PageUp"],
-        "core.move.half.page.down": ["Alt+PageDown"],
+        "core.move.home": ["Home", "G"],
+        "core.move.end": ["End", "Shift+G"],
+        "core.move.page.up": ["PageUp", "Control+B"],
+        "core.move.page.down": ["PageDown", "Control+F"],
+        "core.move.half.page.up": ["Alt+PageUp", "Control+U"],
+        "core.move.half.page.down": ["Alt+PageDown", "Control+D"],
         "core.documentation": ["F1"],
         // "core.open": ["Return", "Cmd+Down"],
         //"core.open": ["Cmd+Down", "Cmd+O", "Right"],
-        //"core.go.up": ["Backspace", "Cmd+Up", "Left"],
+        "core.go.up": ["Backspace", "Cmd+Up", "B"],
         "core.trash": ["F8", "Cmd+Backspace"],
         "core.select.all": ["Cmd+A"],
         "core.deselect.all": ["Escape"],
-        "core.toggle.show.hidden.files": ["Control+H"],
+        "core.toggle.show.hidden.files": ["Control+Shift+H"],
         "core.preview": ["Cmd+Y", "Space"],
         "core.open.terminal.here": ["F11"],
         "MacVim.Edit": ["Cmd+Shift+E"],
@@ -202,26 +208,26 @@
         "core.open.editor.here": ["Shift+F4"],
         "core.copy.to.clipboard": ["Cmd+C"],
         "core.paste": ["Cmd+V"],
-        "core.copy": ["F5"],
-        "core.move": ["F6"],
-        "core.rename": ["F2"],
+        "core.copy": ["F5", "C"],
+        "core.move": ["F6", "Shift+M"],
+        "core.rename": ["F2", "Shift+R"],
         //"core.rename": ["Return"],
-        "core.new.file": ["Shift+F7"],
-        "core.new.directory": ["F7", "Cmd+Shift+N"],
+        "core.new.file": ["Shift+F7", "Shift+N"],
+        "core.new.directory": ["F7", "Shift+K"],
         "core.refresh": ["Cmd+R"],
         "core.get.info": ["Cmd+I"],
         "core.copy.current.dir.path": ["F12"],
         "core.copy.selected.paths": ["Cmd+F12"],
         "core.delete": ["Shift+F8"],
         "core.actions": ["Shift+Cmd+P"],
-        "core.history": ["Alt+3"],
+        "core.history": ["Alt+3", "Control+H"],
         "core.back": ["Alt+Left"],
         "core.forward": ["Alt+Right"],
-        "core.favorites": ["Alt+2", "Cmd+J"],
+        "core.favorites": ["Alt+2", "Cmd+J", "Control+J"],
         "core.add.to.favorites.here": ["Shift+Alt+2"],
         "core.volumes": ["Alt+1"],
         "core.hierarchy": ["Alt+0"],
-        "core.goto.path": ["Cmd+G"],
+        "core.goto.path": ["Cmd+G", "Control+G"],
         "core.clone.to.right": ["Cmd+Right"],
         "core.clone.to.left": ["Cmd+Left"],
         "core.clone.current.directory.to.right": ["Shift+Cmd+Right"],
@@ -428,13 +434,6 @@
         // Terminal fonts ("bold", "italic", "boldItalic" fonts are also available)
         "fonts": {
             "normal": ["Monaco", 13]
-        },
-
-        // Custom environment variables
-        "environ": {
-            //"key": "value"
-            // NOT WORKING
-            "terminal": "/Applications/iTerm.app"
         }
     }
 }

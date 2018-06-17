@@ -172,7 +172,7 @@
     // Action key bindings. Each action may have several bindings, and several actions may share
     // a common key binding (if more than one action is applicabl   e, the menu will be shown).
     "keyBindings": {
-        "core.change.current.pane": ["Left", "Right", "Tab", "H", "L"],
+        "core.change.current.pane": ["Left", "Right", "Tab", "H", "L", "T"],
         "core.move.up": ["Up", "K"],
         "core.select.move.up": ["Shift+Up", "Shift+K"],
         "core.move.down": ["Down", "J"],
@@ -192,7 +192,7 @@
         "core.documentation": ["F1"],
         // "core.open": ["Return", "Cmd+Down"],
         //"core.open": ["Cmd+Down", "Cmd+O", "Right"],
-        //"core.go.up": ["Backspace", "Cmd+Up", "Left"],
+        "core.go.up": ["Backspace", "Cmd+Up", "B"],
         "core.trash": ["F8", "Cmd+Backspace"],
         "core.select.all": ["Cmd+A"],
         "core.deselect.all": ["Escape"],

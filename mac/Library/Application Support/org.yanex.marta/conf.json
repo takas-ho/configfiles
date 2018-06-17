@@ -47,7 +47,7 @@
             "matchOnlyPrefix": false,
 
             // Use this mode by default in Quick Select (/regex, \substring, `word)
-            "defaultMode": "word",
+            "defaultMode": "substring",
 
             // Activate Quick Select on typing automatically (if `false`, you will need to firstly press '/')
             "activateOnAnyCharacter": false,

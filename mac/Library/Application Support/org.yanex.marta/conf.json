@@ -208,7 +208,7 @@
         "core.open.editor.here": ["Shift+F4"],
         "core.copy.to.clipboard": ["Cmd+C"],
         "core.paste": ["Cmd+V"],
-        "core.copy": ["F5", "C"],
+        "core.copy": ["F5", "Shift+C"],
         "core.move": ["F6", "Shift+M"],
         "core.rename": ["F2", "Shift+R"],
         //"core.rename": ["Return"],

@@ -248,6 +248,7 @@
         "core.activate.previous.tab": ["Cmd+Shift+["],
         "core.lookup": ["Cmd+P"],
         "core.lookup.here": ["Cmd+Alt+P"],
+        "core.locate.in.finder": ["Cmd+L"],
         // "core.toggle.terminal": ["Cmd+Alt+O"],
         // "core.toggle.terminal": ["Cmd+Alt+O"],
         "core.activate.terminal": ["Cmd+T"],

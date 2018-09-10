@@ -24,7 +24,27 @@
     "path" : "\/Users\/takas-ho\/Data\/Music"
   },
   {
+    "name" : "Dropbox",
+    "path" : "\/Users\/takas-ho\/Dropbox"
+  },
+  {
+    "name" : "Data",
+    "path" : "\/Users\/takas-ho\/Data"
+  },
+  {
+    "name" : "Volumes",
+    "path" : "\/Volumes"
+  },
+  {
     "name" : "tmp",
     "path" : "\/Users\/takas-ho\/tmp"
+  },
+  {
+    "name" : "Movie",
+    "path" : "\/Users\/takas-ho\/Data\/Movie"
+  },
+  {
+    "name" : "Piano",
+    "path" : "\/Users\/takas-ho\/Dropbox\/個人\/Piano"
   }
 ]

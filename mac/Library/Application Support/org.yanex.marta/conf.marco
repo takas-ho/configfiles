@@ -1,19 +1,32 @@
+environment {
+    terminal "Terminal"
+    textEditor "MacVim"
+}
+
 behavior {
+    theme "Kon"
+    useSystemAccentColor true
     controlStyle "fromTheme"
-    dateFormat "%y/%m/%d %T"
-    doublePaneConfigurationInSublime true
-    forceOverlayScrollBars true
-    preselectFirstMenuItem false
     sheetDialogs true
+    
+    relativeDate false
+    dateFormat "%y/%m/%d %T"
+    timeFormat " %H:%M:%S"
+    
+    alwaysShowTabBar false
     showActionBar true
 
+    forceOverlayScrollBars true
+    setCurrentPathAsWindowTitle true
+    preselectFirstMenuItem false
+
     actions {
-        core.activate.next.tab.circular true
-        core.copy.askTargetPath true
         core.delete.confirm true
-        core.favorites.showPinnedPlaces true
         core.lookup.mode "substring"
+        core.open.openExecutablesAsDirectories false
         core.trash.confirm true
+        core.preferences.use.text.editor false
+        core.paste.support.quick.select true
     }
 
     files {
@@ -26,22 +39,31 @@ behavior {
         }
     }
 
+    table {
+        showIcons true
+        iconSize 16
+        verticalPadding 0
+    
+        useAlternateColor true
+        colorHighlighting false
+
+        circularSelection false
+
+        directoryPrefix ""
+        directorySuffix ""
+
+        showGoUpDirectory true
+        selectGoUpDirectoryOnEnter false
+
+        maxItemCount 10000
+        rightClickSelect false
+    }
+
     quickSelect {
         activateOnAnyCharacter false
         defaultMode "substring"
         filterMatchedItems true
         matchOnlyPrefix false
-    }
-
-    table {
-        circularSelection false
-        directoryPrefix ""
-        directorySuffix ""
-        iconSize 16
-        selectGoUpDirectoryOnEnter true
-        showGoUpDirectory true
-        showIcons true
-        useAlternateColor true
     }
 
     volumeSpace {
@@ -50,33 +72,32 @@ behavior {
     }
 }
 
-environment {
-    textEditor "MacVim"
-}
-
 etty {
     chdirToPane true
     chdirToTerminal true
     copyOnSelection true
     dimWhenUnfocused true
+    environ {}
     leadingSpaceOnCd true
     pasteOnRightClick true
+    shell ""
     theme "Pastel"
     useMainThemeColors true
 
     fonts {
-        normal [ "Monaco" 13 ]
+        normal [ "Monaco" 12 ]
     }
 }
 
 fonts {
-    actionBar [ "Helvetica Neue" 13 ]
-    breadcrumbs [ "Helvetica Neue" 13 ]
-    ephemeralTabs [ "Helvetica Neue Bold Italic" 12 ]
-    files [ "Helvetica Neue" 13 ]
-    statusBar [ "Helvetica Neue" 12 ]
-    tableHeader [ "Helvetica Neue" 12 ]
-    tabs [ "Helvetica Neue" 13 ]
+    actionBar [ "Default" 12 ]
+    breadcrumbs [ "Default" 12 ]
+    ephemeralTabs [ "Default Bold" 12 ]
+    files [ "Default" 12 ]
+    statusBar [ "Default Light" 11 ]
+    tableHeader [ "Default" 11 ]
+    tabs [ "Default" 12 ]
+    preferences [ "Monaco" 12 ]
 }
 
 gadgets [
@@ -489,78 +510,130 @@ setup {
         "core.delete"
     ]
 
-    pinnedPlaces [
-        {
-            path "user.home"
-        }
-        {
-            path "user.downloads"
-        }
-        {
-            path "user.documents"
-        }
-        {
-            path "user.desktop"
-        }
-        {
-            name "Library"
-            path "user.library"
-        }
-        {
-            path "system.applications"
-        }
-    ]
+    menu {
+        marta [
+            "core.about"
+            "core.check.for.updates"
+            "core.preferences"
+        ]
+        File [
+            "core.new.file"
+            "core.new.directory"
+            "separator"
+            "core.open"
+            "core.open.with"
+            "core.edit"
+            "core.preview"
+            "separator"
+            "core.rename"
+            "core.copy.to"
+            "core.move.to"
+            "separator"
+            "core.delete"
+            "core.trash"
+        ]
+        Edit [
+            "core.copy.to.clipboard"
+            "core.paste"
+            "separator"
+            "core.select.all"
+            "core.deselect.all"
+            "core.invert.selection"
+            "separator"
+            "core.select.group"
+            "core.deselect.group"
+        ]
+        View [
+            "core.display.mode"
+            "core.edit.columns"
+            "core.ordering"
+            "separator"
+            "core.toggle.show.hidden.files"
+            "core.refresh"
+        ]
+        Go [
+            "core.back"
+            "core.forward"
+            "separator"
+            "core.go.up"
+            "core.hierarchy"
+            "separator"
+            "core.favorites"
+            "core.add.to.favorites.here"
+            "separator"
+            "core.volumes"
+            "core.recent.directories"
+            "separator"
+            "core.goto.path"
+        ]
+        Tools [
+            "core.actions"
+            "separator"
+            "core.activate.terminal"
+            "core.toggle.terminal"
+            "separator"
+            "core.copy.paths"
+            "core.copy.current.dir.path"
+            "separator"
+            "core.dirstat"
+            "separator"
+            "core.reveal.in.finder"
+            "core.open.terminal.here"
+        ]
+        Window [
+            "core.new.window"
+            "core.new.tab"
+            "separator"
+            "core.close.window"
+            "core.close.tab"
+            "separator"
+            "core.activate.previous.tab"
+            "core.activate.next.tab"
+            "core.wrap.panes"
+        ]
+    }
 
     touchBar [
-        {
-            action "core.favorites"
-        }
-        {
-            action "core.history"
-        }
-        {
-            action "core.toggle.show.hidden.files"
-        }
-        {
-            action "core.edit"
-            modifiers "-Shift"
-        }
+        { action "core.favorites" }
+        { action "core.recent.directories" }
+        { action "core.toggle.show.hidden.files" }
+        { action "core.edit" modifiers "-Shift" }
         {
             action "core.open.editor.here"
             modifiers "Shift"
         }
         {
             action "core.new.directory"
-            backgroundColor "#624a2d"
+            backgroundColor #624a2d
             modifiers "-Shift"
         }
         {
             action "core.new.file"
-            backgroundColor "#624a2d"
+            backgroundColor #624a2d
             modifiers "Shift"
         }
         {
-            action "core.copy"
-            backgroundColor "#495e4d"
+            action "core.copy.to"
+            backgroundColor #495e4d
         }
         {
-            action "core.move"
-            backgroundColor "#3c4554"
+            action "core.move.to"
+            backgroundColor #3c4554
             modifiers "-Shift"
         }
         {
             action "core.rename"
-            backgroundColor "#3c4554"
+            backgroundColor #3c4554
             modifiers "Shift"
         }
         {
             action "core.trash"
-            backgroundColor "#5f0405"
+            backgroundColor #5f0405
             modifiers "-Shift"
         }
         {
             action "core.delete"
-            backgroundColor "#5f0405"
+            backgroundColor #5f0405
             modifiers "Shift"
         }
     ]

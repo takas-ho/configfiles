@@ -120,385 +120,101 @@ gadgets [
 ]
 
 keyBindings {
-    "=" {
-        id "core.show.operation.queue"
-    }
-
-    "Alt+0" {
-        id "core.hierarchy"
-    }
-
-    "Alt+1" {
-        id "core.volumes"
-    }
-
-    "Alt+2" {
-        id "core.favorites"
-    }
-
-    "Alt+3" {
-        id "core.history"
-    }
-
-    "Alt+Left" {
-        id "core.back"
-    }
-
-    "Alt+PageDown" {
-        id "core.move.half.page.down"
-    }
-
-    "Alt+PageUp" {
-        id "core.move.half.page.up"
-    }
-
-    "Alt+Right" {
-        id "core.forward"
-    }
-
-    B {
-        id "core.go.up"
-    }
-
-    Backspace {
-        id "core.go.up"
-    }
-
-    "Cmd+1" {
-        id "core.activate.tab.1"
-    }
-
-    "Cmd+2" {
-        id "core.activate.tab.2"
-    }
-
-    "Cmd+3" {
-        id "core.activate.tab.3"
-    }
-
-    "Cmd+4" {
-        id "core.activate.tab.4"
-    }
-
-    "Cmd+5" {
-        id "core.activate.tab.5"
-    }
-
-    "Cmd+6" {
-        id "core.activate.tab.6"
-    }
-
-    "Cmd+7" {
-        id "core.activate.tab.7"
-    }
-
-    "Cmd+8" {
-        id "core.activate.tab.8"
-    }
-
-    "Cmd+9" {
-        id "core.activate.tab.9"
-    }
-
-    "Cmd+A" {
-        id "core.select.all"
-    }
-
-    "Cmd+Alt+P" {
-        id "core.lookup.here"
-    }
-
-    "Cmd+Backspace" {
-        id "core.trash"
-    }
-
-    "Cmd+C" {
-        id "core.copy.to.clipboard"
-    }
-
-    "Cmd+F12" {
-        id "core.copy.selected.paths"
-    }
-
-    "Cmd+G" {
-        id "core.goto.path"
-    }
-
-    "Cmd+I" {
-        id "core.get.info"
-    }
-
-    "Cmd+J" {
-        id "core.favorites"
-    }
-
-    "Cmd+L" {
-        id "core.reveal.in.finder"
-    }
-
-    "Cmd+Left" {
-        id "core.clone.to.left"
-    }
-
-    "Cmd+N" {
-        id "core.new.window"
-    }
-
-    "Cmd+P" {
-        id "core.lookup"
-    }
-
-    "Cmd+R" {
-        id "core.refresh"
-    }
-
-    "Cmd+Right" {
-        id "core.clone.to.right"
-    }
-
-    "Cmd+Shift+E" {
-        id "MacVim.Edit"
-    }
-
-    "Cmd+Shift+M" {
-        id "meld.compare.selection"
-    }
-
-    "Cmd+Shift+[" {
-        id "core.activate.previous.tab"
-    }
-
-    "Cmd+Shift+]" {
-        id "core.activate.next.tab"
-    }
-
-    "Cmd+T" {
-        id "core.new.tab"
-    }
-
-    "Cmd+Up" {
-        id "core.go.up"
-    }
-
-    "Cmd+V" {
-        id "core.paste"
-    }
-
-    "Cmd+W" {
-        id "core.close.tab"
-    }
-
-    "Cmd+Y" {
-        id "core.preview"
-    }
-
-    "Control+B" {
-        id "core.move.page.up"
-    }
-
-    "Control+D" {
-        id "core.move.half.page.down"
-    }
-
-    "Control+F" {
-        id "core.move.page.down"
-    }
-
-    "Control+G" {
-        id "core.goto.path"
-    }
-
-    "Control+H" {
-        id "core.history"
-    }
-
-    "Control+J" {
-        id "core.favorites"
-    }
-
-    "Control+Shift+H" {
-        id "core.toggle.show.hidden.files"
-    }
-
-    "Control+U" {
-        id "core.move.half.page.up"
-    }
-
-    Down {
-        id "core.move.down"
-    }
-
-    End {
-        id "core.move.end"
-    }
-
-    Escape {
-        id "core.deselect.all"
-    }
-
-    F1 {
-        id "core.documentation"
-    }
-
-    F11 {
-        id "core.open.terminal.here"
-    }
-
-    F12 {
-        id "core.copy.current.dir.path"
-    }
-
-    F2 {
-        id "core.rename"
-    }
-
-    F4 {
-        id "core.edit"
-    }
-
-    F5 {
-        id "core.copy"
-    }
-
-    F6 {
-        id "core.move"
-    }
-
-    F7 {
-        id "core.new.directory"
-    }
-
-    F8 {
-        id "core.trash"
-    }
-
-    G {
-        id "core.move.home"
-    }
-
-    H {
-        id "core.change.current.pane"
-    }
-
-    Home {
-        id "core.move.home"
-    }
-
-    J {
-        id "core.move.down"
-    }
-
-    K {
-        id "core.move.up"
-    }
-
-    L {
-        id "core.change.current.pane"
-    }
-
-    Left {
-        id "core.change.current.pane"
-    }
-
-    PageDown {
-        id "core.move.page.down"
-    }
-
-    PageUp {
-        id "core.move.page.up"
-    }
-
-    Right {
-        id "core.change.current.pane"
-    }
-
-    "Shift+Alt+2" {
-        id "core.add.to.favorites.here"
-    }
-
-    "Shift+C" {
-        id "core.copy"
-    }
-
-    "Shift+Cmd+Left" {
-        id "core.clone.current.directory.to.left"
-    }
-
-    "Shift+Cmd+P" {
-        id "core.actions"
-    }
-
-    "Shift+Cmd+Right" {
-        id "core.clone.current.directory.to.right"
-    }
-
-    "Shift+Down" {
-        id "core.select.move.down"
-    }
-
-    "Shift+F4" {
-        id "core.open.editor.here"
-    }
-
-    "Shift+F7" {
-        id "core.new.file"
-    }
-
-    "Shift+F8" {
-        id "core.delete"
-    }
-
-    "Shift+G" {
-        id "core.move.end"
-    }
-
-    "Shift+J" {
-        id "core.select.move.down"
-    }
-
-    "Shift+K" {
-        id "core.select.move.up"
-    }
-
-    "Shift+Left" {
-        id "core.select.move.left"
-    }
-
-    "Shift+M" {
-        id "core.move"
-    }
-
-    "Shift+N" {
-        id "core.new.file"
-    }
-
-    "Shift+R" {
-        id "core.rename"
-    }
-
-    "Shift+Right" {
-        id "core.select.move.right"
-    }
-
-    "Shift+Up" {
-        id "core.select.move.up"
-    }
-
-    Space {
-        id "core.preview"
-    }
-
-    T {
-        id "core.change.current.pane"
-    }
-
-    Tab {
-        id "core.change.current.pane"
-    }
-
-    Up {
-        id "core.move.up"
-    }
+    "=" { id "core.show.operation.queue" }
+    "Alt+0" { id "core.hierarchy" }
+    "Alt+1" { id "core.volumes" }
+    "Alt+2" { id "core.favorites" }
+    "Alt+3" { id "core.history" }
+    "Alt+Left" { id "core.back" }
+    "Alt+PageDown" { id "core.move.half.page.down" }
+    "Alt+PageUp" { id "core.move.half.page.up" }
+    "Alt+Right" { id "core.forward" }
+    B { id "core.go.up" }
+    Backspace { id "core.go.up" }
+    "Cmd+1" { id "core.activate.tab.1" }
+    "Cmd+2" { id "core.activate.tab.2" }
+    "Cmd+3" { id "core.activate.tab.3" }
+    "Cmd+4" { id "core.activate.tab.4" }
+    "Cmd+5" { id "core.activate.tab.5" }
+    "Cmd+6" { id "core.activate.tab.6" }
+    "Cmd+7" { id "core.activate.tab.7" }
+    "Cmd+8" { id "core.activate.tab.8" }
+    "Cmd+9" { id "core.activate.tab.9" }
+    "Cmd+A" { id "core.select.all" }
+    "Cmd+Alt+P" { id "core.lookup.here" }
+    "Cmd+Backspace" { id "core.trash" }
+    "Cmd+C" { id "core.copy.to.clipboard" }
+    "Cmd+F12" { id "core.copy.selected.paths" }
+    "Cmd+G" { id "core.goto.path" }
+    "Cmd+I" { id "core.get.info" }
+    "Cmd+J" { id "core.favorites" }
+    "Cmd+L" { id "core.reveal.in.finder" }
+    "Cmd+Left" { id "core.clone.to.left" }
+    "Cmd+N" { id "core.new.window" }
+    "Cmd+P" { id "core.lookup" }
+    "Cmd+R" { id "core.refresh" }
+    "Cmd+Right" { id "core.clone.to.right" }
+    "Cmd+Shift+E" { id "MacVim.Edit" }
+    "Cmd+Shift+M" { id "meld.compare.selection" }
+    "Cmd+Shift+[" { id "core.activate.previous.tab" }
+    "Cmd+Shift+]" { id "core.activate.next.tab" }
+    "Cmd+T" { id "core.new.tab" }
+    "Cmd+Up" { id "core.go.up" }
+    "Cmd+V" { id "core.paste" }
+    "Cmd+W" { id "core.close.tab" }
+    "Cmd+Y" { id "core.preview" }
+    "Control+B" { id "core.move.page.up" }
+    "Control+D" { id "core.move.half.page.down" }
+    "Control+F" { id "core.move.page.down" }
+    "Control+G" { id "core.goto.path" }
+    "Control+H" { id "core.history" }
+    "Control+J" { id "core.favorites" }
+    "Control+Shift+H" { id "core.toggle.show.hidden.files" }
+    "Control+U" { id "core.move.half.page.up" }
+    Down { id "core.move.down" }
+    End { id "core.move.end" }
+    Escape { id "core.deselect.all" }
+    F1 { id "core.documentation" }
+    F11 { id "core.open.terminal.here" }
+    F12 { id "core.copy.current.dir.path" }
+    F2 { id "core.rename" }
+    F4 { id "core.edit" }
+    F5 { id "core.copy" }
+    F6 { id "core.move" }
+    F7 { id "core.new.directory" }
+    F8 { id "core.trash" }
+    G { id "core.move.home" }
+    H { id "core.change.current.pane" }
+    Home { id "core.move.home" }
+    J { id "core.move.down" }
+    K { id "core.move.up" }
+    L { id "core.change.current.pane" }
+    Left { id "core.change.current.pane" }
+    PageDown { id "core.move.page.down" }
+    PageUp { id "core.move.page.up" }
+    Right { id "core.change.current.pane" }
+    "Shift+Alt+2" { id "core.add.to.favorites.here" }
+    "Shift+C" { id "core.copy" }
+    "Shift+Cmd+Left" { id "core.clone.current.directory.to.left" }
+    "Shift+Cmd+P" { id "core.actions" }
+    "Shift+Cmd+Right" { id "core.clone.current.directory.to.right" }
+    "Shift+Down" { id "core.select.move.down" }
+    "Shift+F4" { id "core.open.editor.here" }
+    "Shift+F7" { id "core.new.file" }
+    "Shift+F8" { id "core.delete" }
+    "Shift+G" { id "core.move.end" }
+    "Shift+J" { id "core.select.move.down" }
+    "Shift+K" { id "core.select.move.up" }
+    "Shift+Left" { id "core.select.move.left" }
+    "Shift+M" { id "core.move" }
+    "Shift+N" { id "core.new.file" }
+    "Shift+R" { id "core.rename" }
+    "Shift+Right" { id "core.select.move.right" }
+    "Shift+Up" { id "core.select.move.up" }
+    Space { id "core.preview" }
+    T { id "core.change.current.pane" }
+    Tab { id "core.change.current.pane" }
+    Up { id "core.move.up" }
 }
 
 setup {

@@ -231,7 +231,7 @@ keyBindings {
     }
 
     "Cmd+L" {
-        id "core.locate.in.finder"
+        id "core.reveal.in.finder"
     }
 
     "Cmd+Left" {

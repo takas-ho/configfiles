@@ -30,6 +30,7 @@ behavior {
     }
 
     files {
+        defaultDir "~"
         dragDrop true
         fileWatcher true
 
@@ -83,7 +84,8 @@ etty {
     shell ""
     theme "Pastel"
     useMainThemeColors true
-
+    usePaste true
+    
     fonts {
         normal [ "Monaco" 12 ]
     }

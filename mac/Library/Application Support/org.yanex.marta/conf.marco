@@ -172,6 +172,7 @@ keyBindings {
     "Alt+2" { id "core.favorites" }
     "Shift+Alt+2" { id "core.add.to.favorites.here" }
     "Alt+3" { id "core.recent.directories" }
+    "Control+H" { id "core.recent.directories" }
 
     "Return" { id "core.open" }
     "Cmd+Return" { id "core.open.with" }
@@ -242,7 +243,6 @@ keyBindings {
     "Cmd+F12" { id "core.copy.paths" }
 
     "=" { id "core.show.operation.queue" }
-    "Control+H" { id "core.history" }
 }
 
 setup {

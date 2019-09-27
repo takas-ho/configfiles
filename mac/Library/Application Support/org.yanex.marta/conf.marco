@@ -1,0 +1,386 @@
+environment {
+    terminal "Terminal"
+    textEditor "MacVim"
+}
+
+behavior {
+    theme "Kon"
+    useSystemAccentColor true
+    controlStyle "fromTheme"
+    sheetDialogs true
+    
+    relativeDate false
+    dateFormat "%y/%m/%d %T"
+    timeFormat " %H:%M:%S"
+    
+    alwaysShowTabBar false
+    showActionBar true
+
+    forceOverlayScrollBars true
+    setCurrentPathAsWindowTitle true
+    preselectFirstMenuItem false
+
+    actions {
+        core.delete.confirm true
+        core.lookup.mode "substring"
+        core.open.openExecutablesAsDirectories false
+        core.trash.confirm true
+        core.preferences.use.text.editor false
+        core.paste.support.quick.select true
+    }
+
+    files {
+        defaultDir "~"
+        dragDrop true
+        fileWatcher true
+
+        globalFilter {
+            alwaysShowDirectories true
+            name [ "^(?!\\.DS_Store$).*$" ]
+        }
+    }
+
+    table {
+        showIcons true
+        iconSize 16
+        verticalPadding 0
+    
+        useAlternateColor true
+        colorHighlighting false
+
+        circularSelection false
+
+        directoryPrefix ""
+        directorySuffix ""
+
+        showGoUpDirectory true
+        selectGoUpDirectoryOnEnter false
+
+        maxItemCount 10000
+        rightClickSelect false
+    }
+
+    quickSelect {
+        activateOnAnyCharacter false
+        defaultMode "substring"
+        filterMatchedItems true
+        matchOnlyPrefix false
+    }
+
+    volumeSpace {
+        format "${availableSpace} (${availablePercent}) available"
+        show "always"
+    }
+}
+
+etty {
+    chdirToPane true
+    chdirToTerminal true
+    copyOnSelection true
+    dimWhenUnfocused true
+    environ {}
+    leadingSpaceOnCd true
+    pasteOnRightClick true
+    shell ""
+    theme "Pastel"
+    useMainThemeColors true
+    usePaste true
+    
+    fonts {
+        normal [ "Monaco" 12 ]
+    }
+}
+
+fonts {
+    actionBar [ "Default" 12 ]
+    breadcrumbs [ "Default" 12 ]
+    ephemeralTabs [ "Default Bold" 12 ]
+    files [ "Default" 12 ]
+    statusBar [ "Default Light" 11 ]
+    tableHeader [ "Default" 11 ]
+    tabs [ "Default" 12 ]
+    preferences [ "Monaco" 12 ]
+}
+
+gadgets [
+    {
+        application "MacVim"
+        files [ "${active.selection.paths}" ]
+        id "MacVim.Edit"
+        name "MacVim gvim"
+        type "application"
+    }
+    {
+        args [ "${active.selection.paths}" "${inactive.selection.paths}" ]
+        executable "/usr/local/bin/meld"
+        id "meld.compare.selection"
+        name "Meld compare selection"
+        type "executable"
+    }
+]
+
+keyBindings {
+    "Shift+Cmd+P" { id "core.actions" }
+
+    "Cmd+N" { id "core.new.window" }
+    "Cmd+T" { id "core.new.tab" }
+    "Cmd+W" { id "core.close.tab" }
+
+    "Tab" { id "core.change.current.pane" }
+
+    "Up" { id "core.move.up" }
+    "Shift+Up" { id "core.select.move.up" }
+    "Cmd+Up" { id "core.go.up" }
+    "Down" { id "core.move.down" }
+    "Shift+Down" { id "core.select.move.down" }
+    "Left" { id "core.change.current.pane" }
+    "Shift+Left" { id "core.select.move.left" }
+    "Right" { id "core.change.current.pane" }
+    "Shift+Right" { id "core.select.move.right" }
+    "PageDown" { id "core.move.page.down" }
+    "PageUp" { id "core.move.page.up" }
+
+    "Alt+PageDown" { id "core.move.half.page.down" }
+    "Alt+PageUp" { id "core.move.half.page.up" }
+    "Home" { id "core.move.home" }
+    "End" { id "core.move.end" }
+
+    "Cmd+A" { id "core.select.all" }
+    "Escape" { id "core.deselect.all" }
+    "Shift+Alt+Down" { id "core.select.all.after" }
+    "Shift+Alt+Up" { id "core.select.all.before" }
+
+    "Cmd+1" { id "core.activate.tab.1" }
+    "Cmd+2" { id "core.activate.tab.2" }
+    "Cmd+3" { id "core.activate.tab.3" }
+    "Cmd+4" { id "core.activate.tab.4" }
+    "Cmd+5" { id "core.activate.tab.5" }
+    "Cmd+6" { id "core.activate.tab.6" }
+    "Cmd+7" { id "core.activate.tab.7" }
+    "Cmd+8" { id "core.activate.tab.8" }
+    "Cmd+9" { id "core.activate.tab.9" }
+    "Cmd+Shift+]" { id "core.activate.next.tab" }
+    "Cmd+Shift+[" { id "core.activate.previous.tab" }
+
+    "Cmd+Left" { id "core.clone.to.left" }
+    "Cmd+Right" { id "core.clone.to.right" }
+    "Shift+Cmd+Left" { id "core.clone.current.directory.to.left" }
+    "Shift+Cmd+Right" { id "core.clone.current.directory.to.right" }
+
+    "Alt+0" { id "core.hierarchy" }
+    "Alt+1" { id "core.volumes" }
+    "Alt+2" { id "core.favorites" }
+    "Shift+Alt+2" { id "core.add.to.favorites.here" }
+    "Alt+3" { id "core.recent.directories" }
+    "Control+H" { id "core.recent.directories" }
+
+    "Return" { id "core.open" }
+    "Cmd+Return" { id "core.open.with" }
+    "Backspace" { id "core.go.up" }
+    "Alt+Left" { id "core.back" }
+    "Alt+Right" { id "core.forward" }
+    "Cmd+G" { id "core.goto.path" }
+
+    "Cmd+I" { id "core.get.info" }
+    "Cmd+Y" { id "core.preview" }
+    "Space" { id "core.preview" }
+
+    "Cmd+P" { id "core.lookup" }
+    "Cmd+Alt+P" { id "core.lookup.here" }
+
+    "Cmd+C" { id "core.copy.to.clipboard" }
+    "Cmd+V" { id "core.paste" }
+
+    "Cmd+H" { id "core.history" }
+    "Cmd+J" { id "core.favorites" }
+    "Control+J" { id "core.favorites" }
+    "Cmd+L" { id "core.reveal.in.finder" }
+    "Cmd+Shift+E" { id "MacVim.Edit" }
+    "Cmd+Shift+M" { id "meld.compare.selection" }
+
+    "Control+G" { id "core.goto.path" }
+    "Control+Shift+H" { id "core.toggle.show.hidden.files" }
+
+    "Control+D" { id "core.move.half.page.down" }
+    "Control+F" { id "core.move.page.down" }
+    "Control+B" { id "core.move.page.up" }
+    "Control+U" { id "core.move.half.page.up" }
+
+    "G" { id "core.move.home" }
+    "Shift+G" { id "core.move.end" }
+
+    "H" { id "core.change.current.pane" }
+    "L" { id "core.change.current.pane" }
+    "J" { id "core.move.down" }
+    "K" { id "core.move.up" }
+    "Shift+J" { id "core.select.move.down" }
+    "Shift+K" { id "core.select.move.up" }
+
+    "Shift+N" { id "core.new.file" }
+
+    "F1" { id "core.documentation" }
+
+    "Cmd+R" { id "core.refresh" }
+    "F2" { id "core.rename" }
+
+    "F4" { id "core.edit" }
+    "Shift+F4" { id "core.open.editor.here" }
+
+    "F5" { id "core.copy.to" }
+
+    "F6" { id "core.move.to" }
+
+    "F7" { id "core.new.directory" }
+    "Shift+F7" { id "core.new.file" }
+
+    "F8" { id "core.trash" }
+    "Cmd+Backspace" { id "core.trash" }
+    "Shift+F8" { id "core.delete" }
+
+    "F11" { id "core.open.terminal.here" }
+
+    "F12" { id "core.copy.current.dir.path" }
+    "Cmd+F12" { id "core.copy.paths" }
+
+    "=" { id "core.show.operation.queue" }
+}
+
+setup {
+    actionBar [
+        "core.open.with"
+        "core.edit"
+        "core.copy"
+        "core.move"
+        "core.rename"
+        "core.new.directory"
+        "core.delete"
+    ]
+
+    menu {
+        marta [
+            "core.about"
+            "core.check.for.updates"
+            "core.preferences"
+        ]
+        File [
+            "core.new.file"
+            "core.new.directory"
+            "separator"
+            "core.open"
+            "core.open.with"
+            "core.edit"
+            "core.preview"
+            "separator"
+            "core.rename"
+            "core.copy.to"
+            "core.move.to"
+            "separator"
+            "core.delete"
+            "core.trash"
+        ]
+        Edit [
+            "core.copy.to.clipboard"
+            "core.paste"
+            "separator"
+            "core.select.all"
+            "core.deselect.all"
+            "core.invert.selection"
+            "separator"
+            "core.select.group"
+            "core.deselect.group"
+        ]
+        View [
+            "core.display.mode"
+            "core.edit.columns"
+            "core.ordering"
+            "separator"
+            "core.toggle.show.hidden.files"
+            "core.refresh"
+        ]
+        Go [
+            "core.back"
+            "core.forward"
+            "separator"
+            "core.go.up"
+            "core.hierarchy"
+            "separator"
+            "core.favorites"
+            "core.add.to.favorites.here"
+            "separator"
+            "core.volumes"
+            "core.recent.directories"
+            "separator"
+            "core.goto.path"
+        ]
+        Tools [
+            "core.actions"
+            "separator"
+            "core.activate.terminal"
+            "core.toggle.terminal"
+            "separator"
+            "core.copy.paths"
+            "core.copy.current.dir.path"
+            "separator"
+            "core.dirstat"
+            "separator"
+            "core.reveal.in.finder"
+            "core.open.terminal.here"
+        ]
+        Window [
+            "core.new.window"
+            "core.new.tab"
+            "separator"
+            "core.close.window"
+            "core.close.tab"
+            "separator"
+            "core.activate.previous.tab"
+            "core.activate.next.tab"
+            "core.wrap.panes"
+        ]
+    }
+
+    touchBar [
+        { action "core.favorites" }
+        { action "core.recent.directories" }
+        { action "core.toggle.show.hidden.files" }
+        { action "core.edit" modifiers "-Shift" }
+        {
+            action "core.open.editor.here"
+            modifiers "Shift"
+        }
+        {
+            action "core.new.directory"
+            backgroundColor #624a2d
+            modifiers "-Shift"
+        }
+        {
+            action "core.new.file"
+            backgroundColor #624a2d
+            modifiers "Shift"
+        }
+        {
+            action "core.copy.to"
+            backgroundColor #495e4d
+        }
+        {
+            action "core.move.to"
+            backgroundColor #3c4554
+            modifiers "-Shift"
+        }
+        {
+            action "core.rename"
+            backgroundColor #3c4554
+            modifiers "Shift"
+        }
+        {
+            action "core.trash"
+            backgroundColor #5f0405
+            modifiers "-Shift"
+        }
+        {
+            action "core.delete"
+            backgroundColor #5f0405
+            modifiers "Shift"
+        }
+    ]
+}

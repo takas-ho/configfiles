@@ -191,7 +191,7 @@ keyBindings {
     "Cmd+C" { id "core.copy.to.clipboard" }
     "Cmd+V" { id "core.paste" }
 
-    "Cmd+H" { id "core.history" }
+    "Cmd+S" { id "core.ordering" }
     "Cmd+J" { id "core.favorites" }
     "Control+J" { id "core.favorites" }
     "Cmd+L" { id "core.reveal.in.finder" }
@@ -259,7 +259,10 @@ setup {
     menu {
         marta [
             "core.about"
+            "core.patreon"
+            "separator"
             "core.check.for.updates"
+            "core.documentation"
             "core.preferences"
         ]
         File [

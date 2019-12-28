@@ -259,7 +259,10 @@ setup {
     menu {
         marta [
             "core.about"
+            "core.patreon"
+            "separator"
             "core.check.for.updates"
+            "core.documentation"
             "core.preferences"
         ]
         File [

@@ -191,6 +191,7 @@ keyBindings {
     "Cmd+C" { id "core.copy.to.clipboard" }
     "Cmd+V" { id "core.paste" }
 
+    "Cmd+S" { id "core.ordering" }
     "Cmd+J" { id "core.favorites" }
     "Control+J" { id "core.favorites" }
     "Cmd+L" { id "core.reveal.in.finder" }

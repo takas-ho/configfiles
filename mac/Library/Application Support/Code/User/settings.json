@@ -1,7 +1,10 @@
 // 既定の設定を上書きするには、このファイル内に設定を挿入します
 {
     "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.renderControlCharacters": true,
+    "editor.renderWhitespace": "all"
 
 
 }

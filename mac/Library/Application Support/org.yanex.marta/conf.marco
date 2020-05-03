@@ -104,18 +104,18 @@ fonts {
 
 gadgets [
     {
-        application "MacVim"
-        files [ "${active.selection.paths}" ]
         id "MacVim.Edit"
         name "MacVim gvim"
         type "application"
+        application "MacVim"
+        files [ "${active.selection.paths}" ]
     }
     {
-        args [ "${active.selection.paths}" "${inactive.selection.paths}" ]
-        executable "/usr/local/bin/meld"
         id "meld.compare.selection"
         name "Meld compare selection"
         type "executable"
+        executable "/usr/local/bin/meld"
+        args [ "${active.selection.paths}" "${inactive.selection.paths}" ]
     }
 ]
 

@@ -117,6 +117,13 @@ gadgets [
         executable "/usr/local/bin/meld"
         args [ "${active.selection.paths}" "${inactive.selection.paths}" ]
     }
+    {
+        id "the-unarchiver"
+        name "The unarchiver"
+        type "executable"
+        args [ "${active.selection.paths}" ]
+        executable "/usr/local/bin/unar"
+    }
 ]
 
 keyBindings {
@@ -217,6 +224,8 @@ keyBindings {
     "Shift+K" { id "core.select.move.up" }
 
     "Shift+N" { id "core.new.file" }
+
+    "Shift+U" { id "the-unarchiver" }
 
     "F1" { id "core.documentation" }
 

@@ -207,7 +207,6 @@ keyBindings {
 
     "Cmd+S" { id "core.ordering" }
     "Cmd+J" { id "core.favorites" }
-    "Control+J" { id "core.favorites" }
     "Cmd+L" { id "core.reveal.in.finder" }
     "Cmd+Shift+E" { id "MacVim.Edit" }
     "Cmd+Shift+M" { id "meld.compare.selection" }
@@ -220,18 +219,17 @@ keyBindings {
     "Control+B" { id "core.move.page.up" }
     "Control+U" { id "core.move.half.page.up" }
 
-    "G" { id "core.move.home" }
     "Shift+G" { id "core.move.end" }
 
-    "H" { id "core.change.current.pane" }
-    "L" { id "core.change.current.pane" }
-    "J" { id "core.move.down" }
-    "K" { id "core.move.up" }
-    "Shift+J" { id "core.select.move.down" }
-    "Shift+K" { id "core.select.move.up" }
+    "Control+L" { id "core.change.current.pane" }
+    "Control+J" { id "core.move.down" }
+    "Control+K" { id "core.move.up" }
+    "Control+Shift+J" { id "core.select.move.down" }
+    "Control+Shift+K" { id "core.select.move.up" }
 
     "Shift+N" { id "core.new.file" }
 
+    "Shift+P" { id "core.compress" }
     "Shift+L" { id "unarchiver-to-current" }
     "Shift+U" { id "unarchiver-to-target" }
 

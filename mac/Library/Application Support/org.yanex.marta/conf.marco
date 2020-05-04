@@ -118,11 +118,18 @@ gadgets [
         args [ "${active.selection.paths}" "${inactive.selection.paths}" ]
     }
     {
-        id "the-unarchiver"
+        id "unarchiver-to-current"
         name "The unarchiver"
         type "executable"
-        args [ "${active.selection.paths}" ]
         executable "/usr/local/bin/unar"
+        args [ "${active.selection.paths}" ]
+    }
+    {
+        id "unarchiver-to-target"
+        name "The unarchiver"
+        type "executable"
+        executable "/usr/local/bin/unar"
+        args [ "${active.selection.paths}" "-output-directory" "${inactive.dir.path}" ]
     }
 ]
 
@@ -225,7 +232,8 @@ keyBindings {
 
     "Shift+N" { id "core.new.file" }
 
-    "Shift+U" { id "the-unarchiver" }
+    "Shift+L" { id "unarchiver-to-current" }
+    "Shift+U" { id "unarchiver-to-target" }
 
     "F1" { id "core.documentation" }
 

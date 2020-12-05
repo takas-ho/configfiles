@@ -252,7 +252,7 @@ keyBindings {
     "Cmd+Backspace" { id "core.trash" }
     "Shift+F8" { id "core.delete" }
 
-    "F11" { id "core.open.terminal.here" }
+    "Shift+F10" { id "core.open.terminal.here" }
 
     "F12" { id "core.copy.current.dir.path" }
     "Cmd+F12" { id "core.copy.paths" }

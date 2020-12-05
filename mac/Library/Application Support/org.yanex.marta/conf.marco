@@ -5,37 +5,71 @@ environment {
 
 behavior {
     theme "Kon"
-    useSystemAccentColor true
-    controlStyle "fromTheme"
-    sheetDialogs true
+    
+    style {
+        controlStyle "fromTheme"
+        sheetDialogs true
+        forceOverlayScrollBars true
+    }
+    
+    layout {
+        alwaysShowTabBar false
+        showActionBar true
+    }
     
     relativeDate false
-    dateFormat "%y/%m/%d %T"
-    timeFormat " %H:%M:%S"
     
-    alwaysShowTabBar false
-    showActionBar true
+    dateFormat {
+        normal "%y/%m/%d %T"
+    }
 
-    forceOverlayScrollBars true
+    timeFormat {
+        separator " "
+        normal "%H:%M:%S"
+    }
+    
+    sizeFormat "adaptive"
+    
     setCurrentPathAsWindowTitle true
     preselectFirstMenuItem false
 
+    completionSoundCondition "backgroundOnly"
+
     actions {
-        core.delete.confirm true
-        core.lookup.mode "substring"
-        core.open.openExecutablesAsDirectories false
+        core.trash.completionSound "system.trash"
         core.trash.confirm true
+
+        core.delete.completionSound "system.trash"
+        core.delete.confirm true
+
+        core.disk.usage.completionSound null
+
+        core.copy.completionSound "system.copy"
+
+        core.duplicate.completionSound "system.copy"
+
+        core.extract.completionSound "system.copy"
+
+        core.compress.completionSound "system.copy"
+
+        core.lookup.mode "substring"
+
+        core.clipboard.paste.support.quick.select true
+
+        core.open.openApplicationsAsFolders false
+
         core.preferences.use.text.editor false
+
         core.paste.support.quick.select true
     }
 
     files {
-        defaultDir "~"
+        defaultFolder "~"
         dragDrop true
         fileWatcher true
 
         globalFilter {
-            alwaysShowDirectories true
+            alwaysShowFolders true
             name [ "^(?!\\.DS_Store$).*$" ]
         }
     }
@@ -50,11 +84,11 @@ behavior {
 
         circularSelection false
 
-        directoryPrefix ""
-        directorySuffix ""
+        folderPrefix ""
+        folderSuffix ""
 
-        showGoUpDirectory true
-        selectGoUpDirectoryOnEnter false
+        showGoUpFolder true
+        selectGoUpFolderOnEnter false
 
         maxItemCount 10000
         rightClickSelect false
@@ -70,6 +104,12 @@ behavior {
     volumeSpace {
         format "${availableSpace} (${availablePercent}) available"
         show "always"
+    }
+}
+
+fileSystems {
+    zip {
+        additionalExtensions []
     }
 }
 
@@ -134,130 +174,141 @@ gadgets [
 ]
 
 keyBindings {
-    "Shift+Cmd+P" { id "core.actions" }
+    "Shift+Cmd+P" "core.actions"
 
-    "Cmd+N" { id "core.new.window" }
-    "Cmd+T" { id "core.new.tab" }
-    "Cmd+W" { id "core.close.tab" }
+    "Cmd+N" "core.window.new"
+    "Cmd+T" "core.tab.new"
+    "Cmd+W" "core.tab.close"
 
-    "Tab" { id "core.change.current.pane" }
+    "Tab" "core.change.current.pane"
 
-    "Up" { id "core.move.up" }
-    "Shift+Up" { id "core.select.move.up" }
-    "Cmd+Up" { id "core.go.up" }
-    "Down" { id "core.move.down" }
-    "Shift+Down" { id "core.select.move.down" }
-    "Left" { id "core.change.current.pane" }
-    "Shift+Left" { id "core.select.move.left" }
-    "Right" { id "core.change.current.pane" }
-    "Shift+Right" { id "core.select.move.right" }
-    "PageDown" { id "core.move.page.down" }
-    "PageUp" { id "core.move.page.up" }
+    "Up" "core.move.up"
+    "Shift+Up" "core.select.move.up"
+    "Cmd+Up" "core.go.up"
+    "Down" "core.move.down"
+    "Shift+Down" "core.select.move.down"
+    "Left" "core.change.current.pane"
+    "Shift+Left" "core.select.move.left"
+    "Right" "core.change.current.pane"
+    "Shift+Right" "core.select.move.right"
+    "PageDown" "core.move.page.down"
+    "Shift+PageDown" "core.select.move.page.down"
+    "PageUp" "core.move.page.up"
+    "Shift+PageUp" "core.select.move.page.up"
+    "Alt+PageDown" "core.move.half.page.down"
+    "Alt+Shift+PageDown" "core.select.move.half.page.down"
+    "Alt+PageUp" "core.move.half.page.up"
+    "Alt+Shift+PageUp" "core.select.move.half.page.up"
+    "Home" "core.move.home"
+    "Shift+Home" "core.select.move.home"
+    "End" "core.move.end"
+    "Shift+End" "core.select.move.end"
 
-    "Alt+PageDown" { id "core.move.half.page.down" }
-    "Alt+PageUp" { id "core.move.half.page.up" }
-    "Home" { id "core.move.home" }
-    "End" { id "core.move.end" }
+    "Cmd+A" "core.select.all"
+    "Escape" "core.select.none"
+    "Shift+Alt+Down" "core.select.all.after"
+    "Shift+Alt+Up" "core.select.all.before"
 
-    "Cmd+A" { id "core.select.all" }
-    "Escape" { id "core.deselect.all" }
-    "Shift+Alt+Down" { id "core.select.all.after" }
-    "Shift+Alt+Up" { id "core.select.all.before" }
+    "Cmd+1" "core.tab.1"
+    "Cmd+2" "core.tab.2"
+    "Cmd+3" "core.tab.3"
+    "Cmd+4" "core.tab.4"
+    "Cmd+5" "core.tab.5"
+    "Cmd+6" "core.tab.6"
+    "Cmd+7" "core.tab.7"
+    "Cmd+8" "core.tab.8"
+    "Cmd+9" "core.tab.9"
+    "Cmd+Shift+]" "core.tab.next"
+    "Cmd+Shift+[" "core.tab.previous"
 
-    "Cmd+1" { id "core.activate.tab.1" }
-    "Cmd+2" { id "core.activate.tab.2" }
-    "Cmd+3" { id "core.activate.tab.3" }
-    "Cmd+4" { id "core.activate.tab.4" }
-    "Cmd+5" { id "core.activate.tab.5" }
-    "Cmd+6" { id "core.activate.tab.6" }
-    "Cmd+7" { id "core.activate.tab.7" }
-    "Cmd+8" { id "core.activate.tab.8" }
-    "Cmd+9" { id "core.activate.tab.9" }
-    "Cmd+Shift+]" { id "core.activate.next.tab" }
-    "Cmd+Shift+[" { id "core.activate.previous.tab" }
+    "Cmd+Left" "core.clone.left"
+    "Cmd+Right" "core.clone.right"
+    "Shift+Cmd+Left" "core.clone.left.folder"
+    "Shift+Cmd+Right" "core.clone.right.folder"
 
-    "Cmd+Left" { id "core.clone.to.left" }
-    "Cmd+Right" { id "core.clone.to.right" }
-    "Shift+Cmd+Left" { id "core.clone.current.directory.to.left" }
-    "Shift+Cmd+Right" { id "core.clone.current.directory.to.right" }
+    "Alt+0" "core.hierarchy"
+    "Alt+1" "core.volumes"
+    "Alt+2" "core.favorites"
+    "Shift+Alt+2" "core.favorites.add"
+    "Alt+3" "core.recent"
+    "Control+H" "core.recent"
 
-    "Alt+0" { id "core.hierarchy" }
-    "Alt+1" { id "core.volumes" }
-    "Alt+2" { id "core.favorites" }
-    "Shift+Alt+2" { id "core.add.to.favorites.here" }
-    "Alt+3" { id "core.recent.directories" }
-    "Control+H" { id "core.recent.directories" }
+    "Return" "core.open"
+    "Cmd+Return" "core.open.with"
+    "Backspace" "core.go.up"
+    "Cmd+[" "core.back"
+    "Cmd+]" "core.forward"
+    "Cmd+G" "core.go"
 
-    "Return" { id "core.open" }
-    "Cmd+Return" { id "core.open.with" }
-    "Backspace" { id "core.go.up" }
-    "Alt+Left" { id "core.back" }
-    "Alt+Right" { id "core.forward" }
-    "Cmd+G" { id "core.goto.path" }
+    "Cmd+I" "core.finder.showInfo"
+    "Cmd+Y" "core.preview"
+    "Space" "core.preview"
 
-    "Cmd+I" { id "core.get.info" }
-    "Cmd+Y" { id "core.preview" }
-    "Space" { id "core.preview" }
+    "Cmd+P" "core.lookup"
+    "Cmd+Alt+P" "core.lookup.here"
 
-    "Cmd+P" { id "core.lookup" }
-    "Cmd+Alt+P" { id "core.lookup.here" }
+    "Cmd+C" "core.clipboard.copy"
+    "Cmd+V" "core.clipboard.paste"
 
-    "Cmd+C" { id "core.copy.to.clipboard" }
-    "Cmd+V" { id "core.paste" }
+    "Cmd+S" "core.ordering"
+    "Cmd+J" "core.favorites"
+    "Cmd+L" "core.finder.reveal"
+    "Cmd+Shift+E" "MacVim.Edit"
+    "Cmd+Shift+M" "meld.compare.selection"
 
-    "Cmd+S" { id "core.ordering" }
-    "Cmd+J" { id "core.favorites" }
-    "Cmd+L" { id "core.reveal.in.finder" }
-    "Cmd+Shift+E" { id "MacVim.Edit" }
-    "Cmd+Shift+M" { id "meld.compare.selection" }
+    "Control+G" "core.go"
 
-    "Control+G" { id "core.goto.path" }
-    "Control+Shift+H" { id "core.toggle.show.hidden.files" }
+    "Control+D" "core.move.half.page.down"
+    "Control+F" "core.move.page.down"
+    "Control+B" "core.move.page.up"
+    "Control+U" "core.move.half.page.up"
 
-    "Control+D" { id "core.move.half.page.down" }
-    "Control+F" { id "core.move.page.down" }
-    "Control+B" { id "core.move.page.up" }
-    "Control+U" { id "core.move.half.page.up" }
+    "Shift+G" "core.move.end"
 
-    "Shift+G" { id "core.move.end" }
+    "Control+L" "core.change.current.pane"
+    "Control+J" "core.move.down"
+    "Control+K" "core.move.up"
+    "Control+Shift+J" "core.select.move.down"
+    "Control+Shift+K" "core.select.move.up"
 
-    "Control+L" { id "core.change.current.pane" }
-    "Control+J" { id "core.move.down" }
-    "Control+K" { id "core.move.up" }
-    "Control+Shift+J" { id "core.select.move.down" }
-    "Control+Shift+K" { id "core.select.move.up" }
+    "Shift+N" "core.new.file"
 
-    "Shift+N" { id "core.new.file" }
+    "Shift+P" "core.compress"
+    "Shift+L" "unarchiver-to-current"
+    "Shift+U" "unarchiver-to-target"
 
-    "Shift+P" { id "core.compress" }
-    "Shift+L" { id "unarchiver-to-current" }
-    "Shift+U" { id "unarchiver-to-target" }
+    "F1" "core.documentation"
 
-    "F1" { id "core.documentation" }
+    "Cmd+R" "core.refresh"
+    "F2" "core.rename"
 
-    "Cmd+R" { id "core.refresh" }
-    "F2" { id "core.rename" }
+    "F4" "core.edit"
+    "Shift+F4" "core.edit.folder"
 
-    "F4" { id "core.edit" }
-    "Shift+F4" { id "core.open.editor.here" }
+    "F5" "core.copy"
 
-    "F5" { id "core.copy.to" }
+    "F6" "core.move"
 
-    "F6" { id "core.move.to" }
+    "F7" "core.new.folder"
+    "Shift+F7" "core.new.file"
 
-    "F7" { id "core.new.directory" }
-    "Shift+F7" { id "core.new.file" }
+    "F8" "core.trash"
+    "Cmd+Backspace" "core.trash"
+    "Shift+F8" "core.delete"
 
-    "F8" { id "core.trash" }
-    "Cmd+Backspace" { id "core.trash" }
-    "Shift+F8" { id "core.delete" }
+    "Shift+F10" "core.ext.terminal.open"
 
-    "Shift+F10" { id "core.open.terminal.here" }
+    "F12" "core.path.folder"
+    "Cmd+F12" "core.path"
 
-    "F12" { id "core.copy.current.dir.path" }
-    "Cmd+F12" { id "core.copy.paths" }
+    "Cmd+O" "core.terminal.activate"
+    "Cmd+Alt+O" "core.terminal.toggle"
 
-    "=" { id "core.show.operation.queue" }
+    "=" "core.queue"
+    "Shift+=" "core.queue"
+    "Shift+Cmd+." "core.display.hidden"
+
+    "Cmd+," "core.preferences"
 }
 
 setup {
@@ -267,7 +318,7 @@ setup {
         "core.copy"
         "core.move"
         "core.rename"
-        "core.new.directory"
+        "core.new.folder"
         "core.delete"
     ]
 
@@ -276,13 +327,12 @@ setup {
             "core.about"
             "core.patreon"
             "separator"
-            "core.check.for.updates"
-            "core.documentation"
+            "core.updates"
             "core.preferences"
         ]
         File [
             "core.new.file"
-            "core.new.directory"
+            "core.new.folder"
             "separator"
             "core.open"
             "core.open.with"
@@ -290,29 +340,29 @@ setup {
             "core.preview"
             "separator"
             "core.rename"
-            "core.copy.to"
-            "core.move.to"
+            "core.copy"
+            "core.move"
             "separator"
             "core.delete"
             "core.trash"
         ]
         Edit [
-            "core.copy.to.clipboard"
-            "core.paste"
+            "core.clipboard.copy"
+            "core.clipboard.paste"
             "separator"
             "core.select.all"
-            "core.deselect.all"
-            "core.invert.selection"
+            "core.select.none"
+            "core.selection.invert"
             "separator"
             "core.select.group"
             "core.deselect.group"
         ]
         View [
             "core.display.mode"
-            "core.edit.columns"
+            "core.display.columns"
             "core.ordering"
             "separator"
-            "core.toggle.show.hidden.files"
+            "core.display.hidden"
             "core.refresh"
         ]
         Go [
@@ -323,51 +373,58 @@ setup {
             "core.hierarchy"
             "separator"
             "core.favorites"
-            "core.add.to.favorites.here"
+            "core.favorites.add"
             "separator"
             "core.volumes"
-            "core.recent.directories"
+            "core.recent"
             "separator"
-            "core.goto.path"
+            "core.go"
         ]
         Tools [
             "core.actions"
             "separator"
-            "core.activate.terminal"
-            "core.toggle.terminal"
+            "core.terminal.activate"
+            "core.terminal.toggle"
             "separator"
-            "core.copy.paths"
-            "core.copy.current.dir.path"
+            "core.path"
+            "core.path.folder"
             "separator"
-            "core.dirstat"
+            "core.disk.usage.folder"
             "separator"
-            "core.reveal.in.finder"
-            "core.open.terminal.here"
+            "core.finder.reveal"
+            "core.ext.terminal.open"
         ]
         Window [
-            "core.new.window"
-            "core.new.tab"
+            "core.window.new"
+            "core.tab.new"
             "separator"
-            "core.close.window"
-            "core.close.tab"
+            "core.window.close"
+            "core.tab.close"
             "separator"
-            "core.activate.previous.tab"
-            "core.activate.next.tab"
-            "core.wrap.panes"
+            "core.tab.previous"
+            "core.tab.next"
+            "core.pane.swap"
+        ]
+        Help [
+            "core.documentation"
+            "core.changelog"
+            "core.tutorial"
+            "separator"
+            "core.feedback"
         ]
     }
 
     touchBar [
         { action "core.favorites" }
-        { action "core.recent.directories" }
-        { action "core.toggle.show.hidden.files" }
+        { action "core.recent" }
+        { action "core.display.hidden" }
         { action "core.edit" modifiers "-Shift" }
         {
-            action "core.open.editor.here"
+            action "core.edit.folder"
             modifiers "Shift"
         }
         {
-            action "core.new.directory"
+            action "core.new.folder"
             backgroundColor #624a2d
             modifiers "-Shift"
         }
@@ -377,11 +434,11 @@ setup {
             modifiers "Shift"
         }
         {
-            action "core.copy.to"
+            action "core.copy"
             backgroundColor #495e4d
         }
         {
-            action "core.move.to"
+            action "core.move"
             backgroundColor #3c4554
             modifiers "-Shift"
         }

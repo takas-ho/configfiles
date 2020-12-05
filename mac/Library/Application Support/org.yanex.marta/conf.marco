@@ -104,18 +104,32 @@ fonts {
 
 gadgets [
     {
-        application "MacVim"
-        files [ "${active.selection.paths}" ]
         id "MacVim.Edit"
         name "MacVim gvim"
         type "application"
+        application "MacVim"
+        files [ "${active.selection.paths}" ]
     }
     {
-        args [ "${active.selection.paths}" "${inactive.selection.paths}" ]
-        executable "/usr/local/bin/meld"
         id "meld.compare.selection"
         name "Meld compare selection"
         type "executable"
+        executable "/usr/local/bin/meld"
+        args [ "${active.selection.paths}" "${inactive.selection.paths}" ]
+    }
+    {
+        id "unarchiver-to-current"
+        name "The unarchiver"
+        type "executable"
+        executable "/usr/local/bin/unar"
+        args [ "${active.selection.paths}" ]
+    }
+    {
+        id "unarchiver-to-target"
+        name "The unarchiver"
+        type "executable"
+        executable "/usr/local/bin/unar"
+        args [ "${active.selection.paths}" "-output-directory" "${inactive.dir.path}" ]
     }
 ]
 
@@ -193,7 +207,6 @@ keyBindings {
 
     "Cmd+S" { id "core.ordering" }
     "Cmd+J" { id "core.favorites" }
-    "Control+J" { id "core.favorites" }
     "Cmd+L" { id "core.reveal.in.finder" }
     "Cmd+Shift+E" { id "MacVim.Edit" }
     "Cmd+Shift+M" { id "meld.compare.selection" }
@@ -206,17 +219,19 @@ keyBindings {
     "Control+B" { id "core.move.page.up" }
     "Control+U" { id "core.move.half.page.up" }
 
-    "G" { id "core.move.home" }
     "Shift+G" { id "core.move.end" }
 
-    "H" { id "core.change.current.pane" }
-    "L" { id "core.change.current.pane" }
-    "J" { id "core.move.down" }
-    "K" { id "core.move.up" }
-    "Shift+J" { id "core.select.move.down" }
-    "Shift+K" { id "core.select.move.up" }
+    "Control+L" { id "core.change.current.pane" }
+    "Control+J" { id "core.move.down" }
+    "Control+K" { id "core.move.up" }
+    "Control+Shift+J" { id "core.select.move.down" }
+    "Control+Shift+K" { id "core.select.move.up" }
 
     "Shift+N" { id "core.new.file" }
+
+    "Shift+P" { id "core.compress" }
+    "Shift+L" { id "unarchiver-to-current" }
+    "Shift+U" { id "unarchiver-to-target" }
 
     "F1" { id "core.documentation" }
 
@@ -237,7 +252,7 @@ keyBindings {
     "Cmd+Backspace" { id "core.trash" }
     "Shift+F8" { id "core.delete" }
 
-    "F11" { id "core.open.terminal.here" }
+    "Shift+F10" { id "core.open.terminal.here" }
 
     "F12" { id "core.copy.current.dir.path" }
     "Cmd+F12" { id "core.copy.paths" }

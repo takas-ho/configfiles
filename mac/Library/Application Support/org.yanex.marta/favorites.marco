@@ -1,4 +1,4 @@
-Home "~"
+"takas-ho" "~"
 tmp "~/tmp"
 work "~/work"
 Downloads "${user.downloads}"
